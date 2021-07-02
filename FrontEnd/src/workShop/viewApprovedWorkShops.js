@@ -40,6 +40,10 @@ class ViewApprovedWorkShops extends Component {
                                             <dd className="col-sm-10">{item.description}</dd>
                                         </div>
                                         <div className="row">
+                                            <dt className="col-sm-2">Presenters </dt>
+                                            <dd className="col-sm-10">{item.presenters}</dd>
+                                        </div>
+                                        <div className="row">
                                             <dt className="col-sm-2">Date</dt>
                                             <dd className="col-sm-10">{moment(item.date).format('YYYY-MM-DD')}</dd>
                                         </div>

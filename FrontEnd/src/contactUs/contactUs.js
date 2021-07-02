@@ -1,8 +1,57 @@
 import React, {Component} from 'react';
-import image from "./img/contact.png"
-import './style/contactUs.css'
+import image from "./img/contact.png";
+import './style/contactUs.css';
+import axios from 'axios'
+
+//Initial states of input fields
+const initialState = {
+    name:'',
+    email:'',
+    subject: '',
+    message: ''
+}
 
 class ContactUs extends Component {
+    constructor(props) {
+        super(props);
+        //bind onChange function
+        this.onChange = this.onChange.bind(this);
+        //bind onSubmit function
+        this.onSubmit = this.onSubmit.bind(this);
+        this.state = initialState;
+    }
+
+    //to store values into input fields
+    onChange(e) {
+        this.setState({[e.target.name]:e.target.value})
+    }
+
+    //To pass values into database
+    onSubmit(e) {
+        e.preventDefault();
+        //create a object to send to database
+        let contactus = {
+            name: this.state.name,
+            email: this.state.email,
+            subject: this.state.subject,
+            message: this.state.message
+        }
+        //call the end point and pass the values using axios
+        console.log('data to send', contactus);
+        axios.post('http://localhost:8080/contact-us/create', contactus)
+            .then(response => {
+                alert('Thanks for Your Comment')
+                this.state.name=''
+                this.state.email=''
+                this.state.subject=''
+                this.state.message=''
+            })
+            .catch(error => {
+                console.log(error.message);
+                alert(error.message)
+            })
+    }
+
     render() {
         return (
             <div className="container p-3">
@@ -12,7 +61,7 @@ class ContactUs extends Component {
                             <div className="raw p-3">
                                 <h2><b>LEAVE A COMMENT</b></h2>
                                 <br/>
-                                <form className="row g-3">
+                                <form onSubmit={this.onSubmit} className="row g-3">
                                     <div className="col-12">
                                         <label htmlFor="name" className="form-label">Your Name</label>
                                         <input
@@ -20,36 +69,44 @@ class ContactUs extends Component {
                                             className="form-control"
                                             id="name"
                                             name="name"
+                                            value={this.state.name}
+                                            onChange={this.onChange}
                                         />
                                     </div>
                                     <div className="col-12">
-                                        <label htmlFor="name" className="form-label">Your Email</label>
+                                        <label htmlFor="email" className="form-label">Your Email</label>
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            id="email"
+                                            name="email"
+                                            value={this.state.email}
+                                            onChange={this.onChange}
+                                        />
+                                    </div>
+                                    <div className="col-12">
+                                        <label htmlFor="subject" className="form-label">Subject</label>
                                         <input
                                             type="text"
                                             className="form-control"
-                                            id="name"
-                                            name="name"
+                                            id="subject"
+                                            name="subject"
+                                            value={this.state.subject}
+                                            onChange={this.onChange}
                                         />
                                     </div>
                                     <div className="col-12">
-                                        <label htmlFor="name" className="form-label">Subject</label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            id="name"
-                                            name="name"
-                                        />
-                                    </div>
-                                    <div className="col-12">
-                                        <label htmlFor="name" className="form-label">Your Message</label>
+                                        <label htmlFor="message" className="form-label">Your Message</label>
                                         <textarea
                                             className="form-control"
-                                            id="floatingTextarea2">
-                                        </textarea>
+                                            id="message"
+                                            name="message"
+                                            value={this.state.message}
+                                            onChange={this.onChange}>
+                                </textarea>
                                     </div>
-
+                                    <button type="submit" className="btn btn-outline-danger">SUBMIT</button>
                                 </form><br/>
-                                <button type="submit" className="btn btn-outline-danger">SUBMIT</button>
                             </div>
                         </div>
                         <div className="col p-3">

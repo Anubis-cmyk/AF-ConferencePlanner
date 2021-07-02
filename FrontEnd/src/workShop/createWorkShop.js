@@ -9,6 +9,7 @@ const initialState = {
     workShopTitle: '',
     description: '',
     proposalURL: '',
+    presenters: '',
     estimatedDuration: 0,
     paymentAmount: 0
 }
@@ -40,6 +41,7 @@ class CreateWorkShop extends Component {
             workShopTitle: this.state.workShopTitle,
             description: this.state.description,
             proposalURL: this.state.proposalURL,
+            presenters: this.state.presenters,
             estimatedDuration: this.state.estimatedDuration,
             paymentAmount: this.state.paymentAmount
         }
@@ -135,6 +137,20 @@ class CreateWorkShop extends Component {
                                     value={this.state.proposalURL}
                                     onChange={this.onChange}
                                 />
+                            </div>
+                            <div className="col-12">
+                                <label htmlFor="presenters" className="form-label">Presenters</label>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text" id="inputGroupPrepend"><i className="fas fa-user-friends"></i></span>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="presenters"
+                                        name="presenters"
+                                        value={this.state.presenters}
+                                        onChange={this.onChange}
+                                    />
+                                </div>
                             </div>
                             <div className="col-md-6">
                                 <label htmlFor="estimatedDuration" className="form-label">Estimated Duration</label>

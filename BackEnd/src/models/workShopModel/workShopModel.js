@@ -36,6 +36,10 @@ const WorkshopSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    presenters: {
+        type: String,
+        required: true
+    },
     status: {
         type: String,
         default: "not approved"
