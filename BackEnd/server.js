@@ -7,6 +7,8 @@ const workShopAPI = require('./src/api/workShopAPI/workShopAPI');
 const workShopPaymentAPI = require('./src/api/attendeeAPI/workShopPaymentAPI');
 const attendeeAPI = require('./src/api/attendeeAPI/attendeeAPI');
 const UserAPI = require('./src/api/userAPI');
+const researchAPI = require('./src/api/researcherAPI/researcherAPI');
+const ResearchPaperPaymentAPI = require('./src/api/researcherAPI/researchPaperPaymentAPI');
 
 dotenv.config();
 const app = express();
@@ -46,6 +48,8 @@ app.use('/workshop', workShopAPI());
 app.use('/workshoppayment', workShopPaymentAPI());
 app.use('/attendee', attendeeAPI());
 app.use('/user',UserAPI());
+app.use('/research', researchAPI());
+app.use('/researchpaperpayment', ResearchPaperPaymentAPI());
 
 
 app.listen(PORT,()=>{
