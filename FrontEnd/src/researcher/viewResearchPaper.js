@@ -19,7 +19,7 @@ class ViewResearchPaper extends Component {
     }
 
     deleteResearchPaper(e, id){
-        axios.delete('http://localhost:8080/research/delete/:id').then(response => {
+        axios.delete(`http://localhost:8080/research/delete/${id}`).then(response => {
             this.componentDidMount()
             alert("Delete successfully!");
         })

@@ -70147,7 +70147,7 @@ var ViewResearchPaper = /*#__PURE__*/function (_Component) {
     value: function deleteResearchPaper(e, id) {
       var _this3 = this;
 
-      _axios.default.delete('http://localhost:8080/research/delete/:id').then(function (response) {
+      _axios.default.delete("http://localhost:8080/research/delete/".concat(id)).then(function (response) {
         _this3.componentDidMount();
 
         alert("Delete successfully!");
@@ -70465,6 +70465,7 @@ var ViewPaymentDetails = /*#__PURE__*/function (_Component) {
     _classCallCheck(this, ViewPaymentDetails);
 
     _this = _super.call(this, props);
+    _this.deletePaymentDetails = _this.deletePaymentDetails.bind(_assertThisInitialized(_this));
     _this.state = {
       paymentDetails: []
     };
@@ -70485,8 +70486,21 @@ var ViewPaymentDetails = /*#__PURE__*/function (_Component) {
       });
     }
   }, {
+    key: "deletePaymentDetails",
+    value: function deletePaymentDetails(e, id) {
+      var _this3 = this;
+
+      _axios.default.delete("http://localhost:8080/researchpaperpayment/delete/".concat(id)).then(function (response) {
+        _this3.componentDidMount();
+
+        alert("Delete successfully!");
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this4 = this;
+
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "container"
       }, /*#__PURE__*/_react.default.createElement("h3", null, "Payment Details"), this.state.paymentDetails.length > 0 && this.state.paymentDetails.map(function (item, index) {
@@ -70495,7 +70509,15 @@ var ViewPaymentDetails = /*#__PURE__*/function (_Component) {
           className: "card mb-3"
         }, /*#__PURE__*/_react.default.createElement("div", {
           className: "p-3"
-        }, /*#__PURE__*/_react.default.createElement("h5", null, "Full Name: ", item.name), /*#__PURE__*/_react.default.createElement("h6", null, "Contact No: ", item.contactNo), /*#__PURE__*/_react.default.createElement("h6", null, "Email: ", item.email), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Amount: ", item.depositedAmount), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Date: ", item.depositedDate), /*#__PURE__*/_react.default.createElement("h6", null, "Bank: ", item.bank), /*#__PURE__*/_react.default.createElement("h6", null, "Branch: ", item.branch)));
+        }, /*#__PURE__*/_react.default.createElement("h5", null, "Full Name: ", item.name), /*#__PURE__*/_react.default.createElement("h6", null, "Contact No: ", item.contactNo), /*#__PURE__*/_react.default.createElement("h6", null, "Email: ", item.email), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Amount: ", item.depositedAmount), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Date: ", item.depositedDate), /*#__PURE__*/_react.default.createElement("h6", null, "Bank: ", item.bank), /*#__PURE__*/_react.default.createElement("h6", null, "Branch: ", item.branch), /*#__PURE__*/_react.default.createElement("button", {
+          style: {
+            marginLeft: "20px"
+          },
+          onClick: function onClick(e) {
+            return _this4.deletePaymentDetails(e, item._id);
+          },
+          className: "btn btn-danger"
+        }, "Delete")));
       }));
     }
   }]);
@@ -70689,7 +70711,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10402" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8838" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

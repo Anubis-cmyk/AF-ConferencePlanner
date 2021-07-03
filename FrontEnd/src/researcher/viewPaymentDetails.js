@@ -4,6 +4,7 @@ import axios from "axios";
 class ViewPaymentDetails extends Component {
     constructor(props) {
         super(props);
+        this.deletePaymentDetails = this.deletePaymentDetails.bind(this);
         this.state = {
             paymentDetails: []
         }
@@ -15,6 +16,13 @@ class ViewPaymentDetails extends Component {
             console.log(response.data);
         })
     }
+    deletePaymentDetails(e, id){
+        axios.delete(`http://localhost:8080/researchpaperpayment/delete/${id}`).then(response => {
+            this.componentDidMount()
+            alert("Delete successfully!");
+        })
+    }
+
     render() {
         return(
             <div className="container">
@@ -29,6 +37,7 @@ class ViewPaymentDetails extends Component {
                             <h6>Deposited Date: {item.depositedDate}</h6>
                             <h6>Bank: {item.bank}</h6>
                             <h6>Branch: {item.branch}</h6>
+                            <button style={{marginLeft: "20px"}} onClick = {e => this.deletePaymentDetails(e, item._id)} className="btn btn-danger">Delete</button>
                         </div>
                     </div>
                 ))}
