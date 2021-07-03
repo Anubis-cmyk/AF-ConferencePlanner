@@ -7,7 +7,7 @@ const workShopAPI = require('./src/api/workShopAPI/workShopAPI');
 const workShopPaymentAPI = require('./src/api/attendeeAPI/workShopPaymentAPI');
 const attendeeAPI = require('./src/api/attendeeAPI/attendeeAPI');
 const contactUsAPI = require('./src/api/contactUsAPI/contactUsAPI');
-const UserAPI = require('./src/api/userAPI');
+const UserAPI = require('./src/api/userAPI/userAPI');
 const researchAPI = require('./src/api/researcherAPI/researcherAPI');
 const ResearchPaperPaymentAPI = require('./src/api/researcherAPI/researchPaperPaymentAPI');
 

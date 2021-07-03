@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e8d75c-f965-4a01-87b0-2f2e05a7b8a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/controller/userCtrl/UserControll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/src/register/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/.env" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/api/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/api/userAPI/userAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/controller/UserControll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/models/userModel/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/home/paralaxContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/home/paralaxContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/register/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/src/routes/pageRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/routes/pageRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,7 +63,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BackEnd/src/api" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\api\userAPI" />
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\controller\userCtrl" />
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\models\userModel" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\api" />
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\controller" />
+      <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\models" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,10 +90,44 @@
       <option name="presentableId" value="Default" />
       <updated>1625300212394</updated>
       <workItem from="1625300214999" duration="1926000" />
+      <workItem from="1625306901156" duration="13028000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625333620123">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1625333620123" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1625307603961">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1625307603961">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1625307603961">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1625307603961">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
   </component>
 </project>

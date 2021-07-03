@@ -9,7 +9,6 @@ import AboutUs from "../aboutUs/aboutUs";
 import ContactUs from "../contactUs/contactUs";
 import AdminHome from "../admin/home/adminHome"
 import Register from "../register/register";
-import Signup from "../comman/Login";
 import ViewWorkShop from "../workShop/viewWorkShop";
 import ViewApprovedWorkShops from "../workShop/viewApprovedWorkShops";
 import CreateWorkShop from "../workShop/createWorkShop";
@@ -26,9 +25,20 @@ import Editor from "../editor/editor";
 import ViewResearchPaper from "../researcher/viewResearchPaper";
 import ResearchPaperPayment from "../researcher/researchPaperPayment";
 import ViewPaymentDetails from "../researcher/viewPaymentDetails";
-
-
->>>>>>> IT19151052
+import View from "../editor/view";
+import CreateConference from "../editor/addConference";
+import ManageConference from "../editor/manageConference";
+import UpdateConference from "../editor/updateConference";
+import CreateSpeaker from "../editor/addSpeaker";
+import ManageSpeakers from "../editor/manageSpeakers";
+import UpdateSpeaker from "../editor/updateSpeaker";
+import AdminConference from "../editor/admin/adminConference";
+import CreateTopic from "../editor/createTitle";
+import GetAllTopics from "../editor/manageTopics";
+import UpdateTopic from "../editor/updateTopic";
+import SingleTopic from "../editor/getOneTopic";
+import ShowPdf from "../workShop/downloadTemplate/showPdf";
+import DownloadPage from "../workShop/downloadTemplate/downloadPage";
 
 function PageRoutes() {
     return (
@@ -57,7 +67,6 @@ function PageRoutes() {
                         <Route path="/workshop-template" component={ShowPdf}/>
                         <Route path="/workshop" component={ViewApprovedWorkShops}/>
                         <Route path="/registration" component={Register}/>
-                        <Route path="/signup" component={Signup}/>
                         <Route path="/contact-us" component={ContactUs}/>
                         <Route path="/about-us" component={AboutUs}/>
                         <Route path="/" component={Home} exact/>
