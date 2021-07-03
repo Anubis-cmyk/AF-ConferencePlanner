@@ -46,8 +46,8 @@ function PageRoutes() {
                         <Route path="/workshop-attendee" component={ViewAttendeeRegistration}/>
                         <Route path="/workshop/registration" component={CreateWorkShop}/>
                         <Route path="/workshop/my" component={ViewWorkShop}/>
-                        <Route path="/workshop-template" component={ShowPdf}/>
                         <Route path="/workshop-template-download" component={DownloadPage}/>
+                        <Route path="/workshop-template" component={ShowPdf}/>
                         <Route path="/workshop" component={ViewApprovedWorkShops}/>
                         <Route path="/registration" component={Register}/>
                         <Route path="/signup" component={Signup}/>

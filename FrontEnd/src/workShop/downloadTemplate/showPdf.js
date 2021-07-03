@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import template from './pdf/Industrial Training Student Guide.pdf';
+import template from './pdf/proposal.pdf';
 
 class ShowPdf extends Component {
     render() {

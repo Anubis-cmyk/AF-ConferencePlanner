@@ -80,7 +80,7 @@ class ViewWorkShop extends Component {
                                 </div>
                                 <div className="row">
                                     <dt className="col-sm-2">Proposal </dt>
-                                    <dd className="col-sm-10">{item.proposalURL}</dd>
+                                    <dd className="col-sm-10"><a href="/workshop-template">show</a></dd>
                                 </div>
                                 <div className="row">
                                     <dt className="col-sm-2">Estimated Duration </dt>

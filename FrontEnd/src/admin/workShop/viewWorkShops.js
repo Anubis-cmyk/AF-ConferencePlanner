@@ -53,7 +53,7 @@ class ViewWorkShops extends Component {
                                     <th>Organizer Email</th>
                                     <th>WorkShop Title</th>
                                     <th>Description</th>
-                                    <th>Proposal URL</th>
+                                    <th>Proposal</th>
                                     <th>Presenters</th>
                                     <th>Estimated Duration(in days)</th>
                                     <th>Payment Amount($)</th>
@@ -71,7 +71,7 @@ class ViewWorkShops extends Component {
                                         <td>{item.organizerEmail}</td>
                                         <td>{item.workShopTitle}</td>
                                         <td>{item.description}</td>
-                                        <td>{item.proposalURL}</td>
+                                        <td><a href="/workshop-template">show</a></td>
                                         <td>{item.presenters}</td>
                                         <td>{item.estimatedDuration}</td>
                                         <td>{item.paymentAmount}</td>

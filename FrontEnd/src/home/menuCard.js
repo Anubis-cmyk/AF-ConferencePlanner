@@ -34,7 +34,7 @@ class MenuCard extends Component {
                                 <p className="card-text"> Witness the birth and development of a new era:
                                     the information age. Discover how Information Technology has transformed the modern workplace and how
                                     pervasive in the development of new knowledge and wealth.</p>
-                                <a href="#" className="button button2">Get start</a>
+                                <a href="/workshop" className="button button2">Get start</a>
                             </div>
                         </div>
                     </div>

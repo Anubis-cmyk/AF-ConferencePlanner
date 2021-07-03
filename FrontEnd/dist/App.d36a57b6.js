@@ -33853,7 +33853,7 @@ var MenuCard = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react.default.createElement("b", null, "WorkShop")), /*#__PURE__*/_react.default.createElement("p", {
         className: "card-text"
       }, " Witness the birth and development of a new era: the information age. Discover how Information Technology has transformed the modern workplace and how pervasive in the development of new knowledge and wealth."), /*#__PURE__*/_react.default.createElement("a", {
-        href: "#",
+        href: "/workshop",
         className: "button button2"
       }, "Get start")))), /*#__PURE__*/_react.default.createElement("div", {
         className: "col"
@@ -36501,7 +36501,21 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"admin/home/adminHome.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"admin/home/image/admin-workshop.png":[function(require,module,exports) {
+module.exports = "/admin-workshop.397d5a7f.png";
+},{}],"admin/home/image/admin-attendee.png":[function(require,module,exports) {
+module.exports = "/admin-attendee.24783c2c.png";
+},{}],"admin/home/image/admin-att-money.png":[function(require,module,exports) {
+module.exports = "/admin-att-money.42297749.png";
+},{}],"admin/home/image/admin-conference.png":[function(require,module,exports) {
+module.exports = "/admin-conference.b2405685.png";
+},{}],"admin/home/image/admin-conference-speaker.png":[function(require,module,exports) {
+module.exports = "/admin-conference-speaker.67623310.png";
+},{}],"admin/home/image/admin-research.png":[function(require,module,exports) {
+module.exports = "/admin-research.11a57121.png";
+},{}],"admin/home/image/admin-user.png":[function(require,module,exports) {
+module.exports = "/admin-user.97cbe7c0.png";
+},{}],"admin/home/adminHome.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36512,6 +36526,22 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 require("./style/adminHome.css");
+
+var _adminWorkshop = _interopRequireDefault(require("./image/admin-workshop.png"));
+
+var _adminAttendee = _interopRequireDefault(require("./image/admin-attendee.png"));
+
+var _adminAttMoney = _interopRequireDefault(require("./image/admin-att-money.png"));
+
+var _adminConference = _interopRequireDefault(require("./image/admin-conference.png"));
+
+var _adminConferenceSpeaker = _interopRequireDefault(require("./image/admin-conference-speaker.png"));
+
+var _adminResearch = _interopRequireDefault(require("./image/admin-research.png"));
+
+var _adminUser = _interopRequireDefault(require("./image/admin-user.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -36555,26 +36585,77 @@ var AdminHome = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "admin-container"
+      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h3", null, /*#__PURE__*/_react.default.createElement("i", {
+        className: "fas fa-tachometer-alt"
+      }, "\xA0\xA0\xA0"), "DASHBOARD"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "row row-cols-1 p-3 row-cols-md-3 g-4"
+      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "/admin/workshop"
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "WorkShop"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminWorkshop.default,
+        height: "100px"
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "/admin/attendee-workshop"
       }, /*#__PURE__*/_react.default.createElement("div", {
-        className: "button"
-      }, /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary",
-        onClick: function onClick() {
-          window.location.replace('/admin/workshop');
-        }
-      }, "WorkShop"), /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary",
-        onClick: function onClick() {
-          window.location.replace('/admin/attendee-workshop');
-        }
-      }, "Attendee"), /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary",
-        onClick: function onClick() {
-          window.location.replace('/admin/attendee-payments');
-        }
-      }, "Attendee Payment"))));
+        className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "WorkShop Attendee"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminAttendee.default,
+        height: "100px"
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "/admin/attendee-payments"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "Attendee Payments"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminAttMoney.default,
+        height: "100px"
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "Conference"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminConference.default,
+        height: "100px"
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "Research"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminResearch.default,
+        height: "100px"
+      }))))), /*#__PURE__*/_react.default.createElement("div", {
+        className: "col"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "card shadow p-3 mb-5 bg-body rounded"
+      }, /*#__PURE__*/_react.default.createElement("h6", null, "User"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _adminUser.default,
+        height: "100px"
+      })))))));
     }
   }]);
 
@@ -36583,7 +36664,7 @@ var AdminHome = /*#__PURE__*/function (_Component) {
 
 var _default = AdminHome;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./style/adminHome.css":"admin/home/style/adminHome.css"}],"register/register.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./style/adminHome.css":"admin/home/style/adminHome.css","./image/admin-workshop.png":"admin/home/image/admin-workshop.png","./image/admin-attendee.png":"admin/home/image/admin-attendee.png","./image/admin-att-money.png":"admin/home/image/admin-att-money.png","./image/admin-conference.png":"admin/home/image/admin-conference.png","./image/admin-conference-speaker.png":"admin/home/image/admin-conference-speaker.png","./image/admin-research.png":"admin/home/image/admin-research.png","./image/admin-user.png":"admin/home/image/admin-user.png"}],"register/register.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42498,7 +42579,9 @@ var ViewWorkShop = /*#__PURE__*/function (_Component) {
           className: "col-sm-2"
         }, "Proposal "), /*#__PURE__*/_react.default.createElement("dd", {
           className: "col-sm-10"
-        }, item.proposalURL)), /*#__PURE__*/_react.default.createElement("div", {
+        }, /*#__PURE__*/_react.default.createElement("a", {
+          href: "/workshop-template"
+        }, "show"))), /*#__PURE__*/_react.default.createElement("div", {
           className: "row"
         }, /*#__PURE__*/_react.default.createElement("dt", {
           className: "col-sm-2"
@@ -42542,7 +42625,14 @@ var ViewWorkShop = /*#__PURE__*/function (_Component) {
 
 var _default = ViewWorkShop;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js"}],"workShop/viewApprovedWorkShops.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js"}],"workShop/style/viewApprovedWorkShop.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"workShop/images/upcomming.png":[function(require,module,exports) {
+module.exports = "/upcomming.de723193.png";
+},{}],"workShop/viewApprovedWorkShops.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -42555,6 +42645,12 @@ var _react = _interopRequireWildcard(require("react"));
 var _axios = _interopRequireDefault(require("axios"));
 
 var _moment = _interopRequireDefault(require("moment"));
+
+require("./style/viewApprovedWorkShop.css");
+
+var _upcomming = _interopRequireDefault(require("./images/upcomming.png"));
+
+var _adminWorkshop = _interopRequireDefault(require("../admin/home/image/admin-workshop.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42584,7 +42680,6 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-//import "./style/viewApprovedWorkShop.css"
 var ViewApprovedWorkShops = /*#__PURE__*/function (_Component) {
   _inherits(ViewApprovedWorkShops, _Component);
 
@@ -42620,9 +42715,11 @@ var ViewApprovedWorkShops = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "background-workshop"
-      }, /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _upcomming.default
+      }), /*#__PURE__*/_react.default.createElement("div", {
         className: "container p-3"
-      }, /*#__PURE__*/_react.default.createElement("h1", null, "WorkShops"), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "UPCOMING WORKSHOPS"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
         className: "p-3"
       }, this.state.workshops.length > 0 && this.state.workshops.map(function (item, index) {
         return /*#__PURE__*/_react.default.createElement("div", {
@@ -42673,7 +42770,7 @@ var ViewApprovedWorkShops = /*#__PURE__*/function (_Component) {
 
 var _default = ViewApprovedWorkShops;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js"}],"workShop/createWorkShop.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js","./style/viewApprovedWorkShop.css":"workShop/style/viewApprovedWorkShop.css","./images/upcomming.png":"workShop/images/upcomming.png","../admin/home/image/admin-workshop.png":"admin/home/image/admin-workshop.png"}],"workShop/createWorkShop.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -67032,11 +67129,13 @@ var ViewWorkShops = /*#__PURE__*/function (_Component) {
         className: "table-responsive"
       }, /*#__PURE__*/_react.default.createElement("table", {
         className: "table table-striped table-hover"
-      }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Organizer Name"), /*#__PURE__*/_react.default.createElement("th", null, "Organizer ContactNo"), /*#__PURE__*/_react.default.createElement("th", null, "Organizer Email"), /*#__PURE__*/_react.default.createElement("th", null, "WorkShop Title"), /*#__PURE__*/_react.default.createElement("th", null, "Description"), /*#__PURE__*/_react.default.createElement("th", null, "Proposal URL"), /*#__PURE__*/_react.default.createElement("th", null, "Presenters"), /*#__PURE__*/_react.default.createElement("th", null, "Estimated Duration(in days)"), /*#__PURE__*/_react.default.createElement("th", null, "Payment Amount($)"), /*#__PURE__*/_react.default.createElement("th", null, "Status"), /*#__PURE__*/_react.default.createElement("th", null, "Date"), /*#__PURE__*/_react.default.createElement("th", null, "Update"), /*#__PURE__*/_react.default.createElement("th", null, "Delete"))), /*#__PURE__*/_react.default.createElement("tbody", null, this.state.workshops.length > 0 && this.state.workshops.map(function (item, index) {
+      }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("th", null, "Organizer Name"), /*#__PURE__*/_react.default.createElement("th", null, "Organizer ContactNo"), /*#__PURE__*/_react.default.createElement("th", null, "Organizer Email"), /*#__PURE__*/_react.default.createElement("th", null, "WorkShop Title"), /*#__PURE__*/_react.default.createElement("th", null, "Description"), /*#__PURE__*/_react.default.createElement("th", null, "Proposal"), /*#__PURE__*/_react.default.createElement("th", null, "Presenters"), /*#__PURE__*/_react.default.createElement("th", null, "Estimated Duration(in days)"), /*#__PURE__*/_react.default.createElement("th", null, "Payment Amount($)"), /*#__PURE__*/_react.default.createElement("th", null, "Status"), /*#__PURE__*/_react.default.createElement("th", null, "Date"), /*#__PURE__*/_react.default.createElement("th", null, "Update"), /*#__PURE__*/_react.default.createElement("th", null, "Delete"))), /*#__PURE__*/_react.default.createElement("tbody", null, this.state.workshops.length > 0 && this.state.workshops.map(function (item, index) {
         return /*#__PURE__*/_react.default.createElement("tr", {
           key: index,
           className: "align-top"
-        }, /*#__PURE__*/_react.default.createElement("td", null, item.organizerName), /*#__PURE__*/_react.default.createElement("td", null, item.organizerContactNo), /*#__PURE__*/_react.default.createElement("td", null, item.organizerEmail), /*#__PURE__*/_react.default.createElement("td", null, item.workShopTitle), /*#__PURE__*/_react.default.createElement("td", null, item.description), /*#__PURE__*/_react.default.createElement("td", null, item.proposalURL), /*#__PURE__*/_react.default.createElement("td", null, item.presenters), /*#__PURE__*/_react.default.createElement("td", null, item.estimatedDuration), /*#__PURE__*/_react.default.createElement("td", null, item.paymentAmount), item.status == "not approved" && /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
+        }, /*#__PURE__*/_react.default.createElement("td", null, item.organizerName), /*#__PURE__*/_react.default.createElement("td", null, item.organizerContactNo), /*#__PURE__*/_react.default.createElement("td", null, item.organizerEmail), /*#__PURE__*/_react.default.createElement("td", null, item.workShopTitle), /*#__PURE__*/_react.default.createElement("td", null, item.description), /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("a", {
+          href: "/workshop-template"
+        }, "show")), /*#__PURE__*/_react.default.createElement("td", null, item.presenters), /*#__PURE__*/_react.default.createElement("td", null, item.estimatedDuration), /*#__PURE__*/_react.default.createElement("td", null, item.paymentAmount), item.status == "not approved" && /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
           className: "badge bg-danger"
         }, item.status))), item.status == "approved" && /*#__PURE__*/_react.default.createElement("td", null, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
           className: "badge bg-success"
@@ -67556,7 +67655,9 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"workShop/downloadTemplate/downloadPage.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"workShop/downloadTemplate/image/download.png":[function(require,module,exports) {
+module.exports = "/download.dacd97b2.png";
+},{}],"workShop/downloadTemplate/downloadPage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -67567,6 +67668,10 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 require("./style/downloadPage.css");
+
+var _download = _interopRequireDefault(require("./image/download.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -67614,12 +67719,19 @@ var DownloadPage = /*#__PURE__*/function (_Component) {
         className: "container-2"
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "card shadow p-3 rounded"
-      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", null, "Download the template for workShop proposal"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", null, "DOWNLOAD WORKSHOP PROPOSAL TEMPLATE"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "center"
+      }, /*#__PURE__*/_react.default.createElement("button", {
         className: "button button2",
         onClick: function onClick() {
           window.location.replace('/workshop-template');
         }
-      }, "Download the template"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null)))));
+      }, "Download the template")), /*#__PURE__*/_react.default.createElement("div", {
+        className: "d-grid gap-2 d-md-flex justify-content-md-end"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _download.default,
+        height: "100px"
+      }))))));
     }
   }]);
 
@@ -67628,8 +67740,8 @@ var DownloadPage = /*#__PURE__*/function (_Component) {
 
 var _default = DownloadPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./style/downloadPage.css":"workShop/downloadTemplate/style/downloadPage.css"}],"workShop/downloadTemplate/pdf/Industrial Training Student Guide.pdf":[function(require,module,exports) {
-module.exports = "/Industrial Training Student Guide.bbda53c4.pdf";
+},{"react":"../node_modules/react/index.js","./style/downloadPage.css":"workShop/downloadTemplate/style/downloadPage.css","./image/download.png":"workShop/downloadTemplate/image/download.png"}],"workShop/downloadTemplate/pdf/proposal.pdf":[function(require,module,exports) {
+module.exports = "/proposal.a631c743.pdf";
 },{}],"workShop/downloadTemplate/showPdf.js":[function(require,module,exports) {
 "use strict";
 
@@ -67640,7 +67752,7 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _IndustrialTrainingStudentGuide = _interopRequireDefault(require("./pdf/Industrial Training Student Guide.pdf"));
+var _proposal = _interopRequireDefault(require("./pdf/proposal.pdf"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -67685,7 +67797,7 @@ var ShowPdf = /*#__PURE__*/function (_Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("embed", {
-        src: _IndustrialTrainingStudentGuide.default,
+        src: _proposal.default,
         type: "application/pdf",
         width: "100%",
         height: "640px"
@@ -67698,7 +67810,7 @@ var ShowPdf = /*#__PURE__*/function (_Component) {
 
 var _default = ShowPdf;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./pdf/Industrial Training Student Guide.pdf":"workShop/downloadTemplate/pdf/Industrial Training Student Guide.pdf"}],"routes/pageRoutes.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./pdf/proposal.pdf":"workShop/downloadTemplate/pdf/proposal.pdf"}],"routes/pageRoutes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -67802,11 +67914,11 @@ function PageRoutes() {
     path: "/workshop/my",
     component: _viewWorkShop.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: "/workshop-template",
-    component: _showPdf.default
-  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/workshop-template-download",
     component: _downloadPage.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/workshop-template",
+    component: _showPdf.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/workshop",
     component: _viewApprovedWorkShops.default
@@ -67877,7 +67989,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60302" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60481" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
