@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import logo from './image/logo.jpg'
 
 class NavBar extends Component {
     constructor(props) {
@@ -9,7 +10,9 @@ class NavBar extends Component {
             <div data-testid="nav-1">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/">Conference Planner</a>
+                        <a className="navbar-brand" href="/">
+                            <img src={logo} alt="" width="30" height="24" class="d-inline-block align-text-top"/>
+                            &nbsp;I<span>CAC</span></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -24,14 +27,37 @@ class NavBar extends Component {
                                     <a className="nav-link" href="/workshop">WorkShop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/create-workshop">WorkShop Registration</a>
+                                    <a className="nav-link" href="/workshop/my">My WorkShops</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/workshop/registration">WorkShop Registration</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/workshop-attendee">Attendee</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/workshop-payment">Attendee payment</a>
+                                    <a className="nav-link" href="/workshop-attendee/registration">Attendee Registration</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/workshop-payment">Attendee payments</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/workshop-payment/create">Attendee payment Submit</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/admin">Admin</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/admin/workshop">Admin workshop</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/admin/attendee-workshop">Admin Attendee</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/admin/attendee-payments">Admin Payments</a>
+                                </li>
+
+
                                 <li className="nav-item">
                                     <a className="nav-link" href="/editor">Conference</a>
                                 </li>

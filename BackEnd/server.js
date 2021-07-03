@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const workShopAPI = require('./src/api/workShopAPI');
-const workShopPaymentAPI = require('./src/api/workShopPaymentAPI');
-const attendeeAPI = require('./src/api/attendeeAPI');
+const workShopAPI = require('./src/api/workShopAPI/workShopAPI');
+const workShopPaymentAPI = require('./src/api/attendeeAPI/workShopPaymentAPI');
+const attendeeAPI = require('./src/api/attendeeAPI/attendeeAPI');
 const UserAPI = require('./src/api/userAPI');
 
 dotenv.config();
