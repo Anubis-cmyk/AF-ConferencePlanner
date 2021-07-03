@@ -3,7 +3,6 @@ import axios from "axios";
 import moment from "moment";
 import "./style/viewApprovedWorkShop.css"
 import upcoming from './images/upcomming.png';
-import workshop from "../admin/home/image/admin-workshop.png";
 
 class ViewApprovedWorkShops extends Component {
     constructor(props) {

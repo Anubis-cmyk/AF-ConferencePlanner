@@ -42415,6 +42415,8 @@ var global = arguments[3];
 
 })));
 
+},{}],"workShop/images/myworkshop.png":[function(require,module,exports) {
+module.exports = "/myworkshop.293b2770.png";
 },{}],"workShop/viewWorkShop.js":[function(require,module,exports) {
 "use strict";
 
@@ -42428,6 +42430,8 @@ var _react = _interopRequireWildcard(require("react"));
 var _axios = _interopRequireDefault(require("axios"));
 
 var _moment = _interopRequireDefault(require("moment"));
+
+var _myworkshop = _interopRequireDefault(require("./images/myworkshop.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42520,8 +42524,12 @@ var ViewWorkShop = /*#__PURE__*/function (_Component) {
       var _this5 = this;
 
       return /*#__PURE__*/_react.default.createElement("div", {
+        className: "background-workshop"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _myworkshop.default
+      }), /*#__PURE__*/_react.default.createElement("div", {
         className: "container p-3"
-      }, /*#__PURE__*/_react.default.createElement("h1", null, "My Registered WorkShops"), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "My Registered WorkShops"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
         className: "p-3"
       }, this.state.workshops.length > 0 && this.state.workshops.map(function (item, index) {
         return /*#__PURE__*/_react.default.createElement("div", {
@@ -42616,7 +42624,7 @@ var ViewWorkShop = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
           className: "badge bg-success"
         }, item.status)))))));
-      })));
+      }))));
     }
   }]);
 
@@ -42625,7 +42633,7 @@ var ViewWorkShop = /*#__PURE__*/function (_Component) {
 
 var _default = ViewWorkShop;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js"}],"workShop/style/viewApprovedWorkShop.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js","./images/myworkshop.png":"workShop/images/myworkshop.png"}],"workShop/style/viewApprovedWorkShop.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -42649,8 +42657,6 @@ var _moment = _interopRequireDefault(require("moment"));
 require("./style/viewApprovedWorkShop.css");
 
 var _upcomming = _interopRequireDefault(require("./images/upcomming.png"));
-
-var _adminWorkshop = _interopRequireDefault(require("../admin/home/image/admin-workshop.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42770,7 +42776,7 @@ var ViewApprovedWorkShops = /*#__PURE__*/function (_Component) {
 
 var _default = ViewApprovedWorkShops;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js","./style/viewApprovedWorkShop.css":"workShop/style/viewApprovedWorkShop.css","./images/upcomming.png":"workShop/images/upcomming.png","../admin/home/image/admin-workshop.png":"admin/home/image/admin-workshop.png"}],"workShop/createWorkShop.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js","./style/viewApprovedWorkShop.css":"workShop/style/viewApprovedWorkShop.css","./images/upcomming.png":"workShop/images/upcomming.png"}],"workShop/createWorkShop.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51026,7 +51032,9 @@ var AttendeeWorkshopRegistration = /*#__PURE__*/function (_Component) {
 
 var _default = AttendeeWorkshopRegistration;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","react-select":"../node_modules/react-select/dist/react-select.esm.js"}],"attendee/workshopRegistration/viewAttendeeRegistration.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","react-select":"../node_modules/react-select/dist/react-select.esm.js"}],"attendee/workshopRegistration/image/myregattwork.png":[function(require,module,exports) {
+module.exports = "/myregattwork.baf5f69d.png";
+},{}],"attendee/workshopRegistration/viewAttendeeRegistration.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51037,6 +51045,8 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _axios = _interopRequireDefault(require("axios"));
+
+var _myregattwork = _interopRequireDefault(require("./image/myregattwork.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51117,8 +51127,12 @@ var ViewAttendeeRegistration = /*#__PURE__*/function (_Component) {
       var _this4 = this;
 
       return /*#__PURE__*/_react.default.createElement("div", {
+        className: "background-workshop"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _myregattwork.default
+      }), /*#__PURE__*/_react.default.createElement("div", {
         className: "container p-3"
-      }, /*#__PURE__*/_react.default.createElement("h1", null, "My WorkShops"), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "My WorkShops"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
         className: "p-3"
       }, this.state.attendees.length > 0 && this.state.attendees.map(function (item, index) {
         return /*#__PURE__*/_react.default.createElement("div", {
@@ -51204,7 +51218,7 @@ var ViewAttendeeRegistration = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
           className: "badge bg-success"
         }, item.status))))));
-      })));
+      }))));
     }
   }]);
 
@@ -51213,7 +51227,7 @@ var ViewAttendeeRegistration = /*#__PURE__*/function (_Component) {
 
 var _default = ViewAttendeeRegistration;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js"}],"attendee/payment/attendeeWorkShopPayment.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","./image/myregattwork.png":"attendee/workshopRegistration/image/myregattwork.png"}],"attendee/payment/attendeeWorkShopPayment.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51502,7 +51516,9 @@ var AttendeeWorkShopPayment = /*#__PURE__*/function (_Component) {
 
 var _default = AttendeeWorkShopPayment;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","axios":"../node_modules/axios/index.js","react-select":"../node_modules/react-select/dist/react-select.esm.js"}],"attendee/payment/viewPayment.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","axios":"../node_modules/axios/index.js","react-select":"../node_modules/react-select/dist/react-select.esm.js"}],"attendee/payment/image/mypayment.png":[function(require,module,exports) {
+module.exports = "/mypayment.253813af.png";
+},{}],"attendee/payment/viewPayment.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51515,6 +51531,8 @@ var _react = _interopRequireWildcard(require("react"));
 var _axios = _interopRequireDefault(require("axios"));
 
 var _moment = _interopRequireDefault(require("moment"));
+
+var _mypayment = _interopRequireDefault(require("./image/mypayment.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51595,8 +51613,12 @@ var ViewPayment = /*#__PURE__*/function (_Component) {
       var _this4 = this;
 
       return /*#__PURE__*/_react.default.createElement("div", {
+        className: "background-workshop"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _mypayment.default
+      }), /*#__PURE__*/_react.default.createElement("div", {
         className: "container p-3"
-      }, /*#__PURE__*/_react.default.createElement("h1", null, "My Payments For WorkShops"), /*#__PURE__*/_react.default.createElement("div", {
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "My Payments For WorkShops"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
         className: "p-3"
       }, this.state.workshoppayments.length > 0 && this.state.workshoppayments.map(function (item, index) {
         return /*#__PURE__*/_react.default.createElement("div", {
@@ -51694,7 +51716,7 @@ var ViewPayment = /*#__PURE__*/function (_Component) {
         }, /*#__PURE__*/_react.default.createElement("h6", null, /*#__PURE__*/_react.default.createElement("span", {
           className: "badge bg-success"
         }, item.status))))));
-      })));
+      }))));
     }
   }]);
 
@@ -51703,7 +51725,7 @@ var ViewPayment = /*#__PURE__*/function (_Component) {
 
 var _default = ViewPayment;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js"}],"../node_modules/fflate/esm/browser.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","moment":"../node_modules/moment/moment.js","./image/mypayment.png":"attendee/payment/image/mypayment.png"}],"../node_modules/fflate/esm/browser.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
