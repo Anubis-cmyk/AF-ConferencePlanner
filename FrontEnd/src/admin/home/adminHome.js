@@ -7,21 +7,24 @@ class AdminHome extends Component {
             <div className="admin-container">
                         <div className="card shadow p-3 mb-5 bg-body rounded">
                             <div className="button">
-                                <a className="nav-link" href="/admin/workshop">
-                                    <button className="btn btn-primary" >
-                                        WorkShop
-                                    </button>
-                                </a>
-                                <a className="nav-link" href="/admin/attendee-workshop">
-                                    <button className="btn btn-primary" >
-                                        Attendee
-                                    </button>
-                                </a>
-                                <a className="nav-link" href="/admin/attendee-payments">
-                                    <button className="btn btn-primary" >
-                                        Attendee Payment
-                                    </button>
-                                </a>
+                                <button className="btn btn-primary" onClick={()=>{
+                                    window.location.replace('/admin/workshop')
+                                }}>
+                                    WorkShop
+                                </button>
+
+                                <button className="btn btn-primary" onClick={()=>{
+                                    window.location.replace('/admin/attendee-workshop')
+                                }}>
+                                    Attendee
+                                </button>
+
+                                <button className="btn btn-primary" onClick={()=>{
+                                    window.location.replace('/admin/attendee-payments')
+                                }}>
+                                    Attendee Payment
+                                </button>
+
                             </div>
                         </div>
             </div>

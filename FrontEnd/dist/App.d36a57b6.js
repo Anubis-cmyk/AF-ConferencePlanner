@@ -36559,22 +36559,22 @@ var AdminHome = /*#__PURE__*/function (_Component) {
         className: "card shadow p-3 mb-5 bg-body rounded"
       }, /*#__PURE__*/_react.default.createElement("div", {
         className: "button"
-      }, /*#__PURE__*/_react.default.createElement("a", {
-        className: "nav-link",
-        href: "/admin/workshop"
       }, /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary"
-      }, "WorkShop")), /*#__PURE__*/_react.default.createElement("a", {
-        className: "nav-link",
-        href: "/admin/attendee-workshop"
-      }, /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary"
-      }, "Attendee")), /*#__PURE__*/_react.default.createElement("a", {
-        className: "nav-link",
-        href: "/admin/attendee-payments"
-      }, /*#__PURE__*/_react.default.createElement("button", {
-        className: "btn btn-primary"
-      }, "Attendee Payment")))));
+        className: "btn btn-primary",
+        onClick: function onClick() {
+          window.location.replace('/admin/workshop');
+        }
+      }, "WorkShop"), /*#__PURE__*/_react.default.createElement("button", {
+        className: "btn btn-primary",
+        onClick: function onClick() {
+          window.location.replace('/admin/attendee-workshop');
+        }
+      }, "Attendee"), /*#__PURE__*/_react.default.createElement("button", {
+        className: "btn btn-primary",
+        onClick: function onClick() {
+          window.location.replace('/admin/attendee-payments');
+        }
+      }, "Attendee Payment"))));
     }
   }]);
 
@@ -67551,7 +67551,154 @@ var Editor = /*#__PURE__*/function (_Component) {
 
 var _default = Editor;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"routes/pageRoutes.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"workShop/downloadTemplate/style/downloadPage.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"workShop/downloadTemplate/downloadPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+require("./style/downloadPage.css");
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var DownloadPage = /*#__PURE__*/function (_Component) {
+  _inherits(DownloadPage, _Component);
+
+  var _super = _createSuper(DownloadPage);
+
+  function DownloadPage() {
+    _classCallCheck(this, DownloadPage);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(DownloadPage, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "a p-3"
+      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("center", null, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "card shadow p-3 rounded"
+      }, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("h4", null, "Download the template for workShop proposal"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+        className: "button button2",
+        onClick: function onClick() {
+          window.location.replace('/workshop-template');
+        }
+      }, "Download the template"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("br", null)))));
+    }
+  }]);
+
+  return DownloadPage;
+}(_react.Component);
+
+var _default = DownloadPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./style/downloadPage.css":"workShop/downloadTemplate/style/downloadPage.css"}],"workShop/downloadTemplate/pdf/Industrial Training Student Guide.pdf":[function(require,module,exports) {
+module.exports = "/Industrial Training Student Guide.bbda53c4.pdf";
+},{}],"workShop/downloadTemplate/showPdf.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _IndustrialTrainingStudentGuide = _interopRequireDefault(require("./pdf/Industrial Training Student Guide.pdf"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ShowPdf = /*#__PURE__*/function (_Component) {
+  _inherits(ShowPdf, _Component);
+
+  var _super = _createSuper(ShowPdf);
+
+  function ShowPdf() {
+    _classCallCheck(this, ShowPdf);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ShowPdf, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("embed", {
+        src: _IndustrialTrainingStudentGuide.default,
+        type: "application/pdf",
+        width: "100%",
+        height: "640px"
+      });
+    }
+  }]);
+
+  return ShowPdf;
+}(_react.Component);
+
+var _default = ShowPdf;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./pdf/Industrial Training Student Guide.pdf":"workShop/downloadTemplate/pdf/Industrial Training Student Guide.pdf"}],"routes/pageRoutes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -67605,6 +67752,10 @@ var _reviewer = _interopRequireDefault(require("../reviewer/reviewer"));
 
 var _editor = _interopRequireDefault(require("../editor/editor"));
 
+var _downloadPage = _interopRequireDefault(require("../workShop/downloadTemplate/downloadPage"));
+
+var _showPdf = _interopRequireDefault(require("../workShop/downloadTemplate/showPdf"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // UI Components
@@ -67651,6 +67802,12 @@ function PageRoutes() {
     path: "/workshop/my",
     component: _viewWorkShop.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/workshop-template",
+    component: _showPdf.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/workshop-template-download",
+    component: _downloadPage.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/workshop",
     component: _viewApprovedWorkShops.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
@@ -67674,7 +67831,7 @@ function PageRoutes() {
 
 var _default = PageRoutes;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../home/home":"home/home.js","../home/navBar":"home/navBar.js","../home/footer":"home/footer.js","../aboutUs/aboutUs":"aboutUs/aboutUs.js","../contactUs/contactUs":"contactUs/contactUs.js","../admin/home/adminHome":"admin/home/adminHome.js","../register/register":"register/register.js","../comman/Login":"comman/Login.js","../workShop/viewWorkShop":"workShop/viewWorkShop.js","../workShop/viewApprovedWorkShops":"workShop/viewApprovedWorkShops.js","../workShop/createWorkShop":"workShop/createWorkShop.js","../attendee/workshopRegistration/attendeeWorkshopRegistration":"attendee/workshopRegistration/attendeeWorkshopRegistration.js","../attendee/workshopRegistration/viewAttendeeRegistration":"attendee/workshopRegistration/viewAttendeeRegistration.js","../attendee/payment/attendeeWorkShopPayment":"attendee/payment/attendeeWorkShopPayment.js","../attendee/payment/viewPayment":"attendee/payment/viewPayment.js","../admin/workShop/viewWorkShops":"admin/workShop/viewWorkShops.js","../admin/attendee/viewAttendee":"admin/attendee/viewAttendee.js","../admin/attendee/viewAttendeeWorkShopPayments":"admin/attendee/viewAttendeeWorkShopPayments.js","../researcher/researcher":"researcher/researcher.js","../reviewer/reviewer":"reviewer/reviewer.js","../editor/editor":"editor/editor.js"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../home/home":"home/home.js","../home/navBar":"home/navBar.js","../home/footer":"home/footer.js","../aboutUs/aboutUs":"aboutUs/aboutUs.js","../contactUs/contactUs":"contactUs/contactUs.js","../admin/home/adminHome":"admin/home/adminHome.js","../register/register":"register/register.js","../comman/Login":"comman/Login.js","../workShop/viewWorkShop":"workShop/viewWorkShop.js","../workShop/viewApprovedWorkShops":"workShop/viewApprovedWorkShops.js","../workShop/createWorkShop":"workShop/createWorkShop.js","../attendee/workshopRegistration/attendeeWorkshopRegistration":"attendee/workshopRegistration/attendeeWorkshopRegistration.js","../attendee/workshopRegistration/viewAttendeeRegistration":"attendee/workshopRegistration/viewAttendeeRegistration.js","../attendee/payment/attendeeWorkShopPayment":"attendee/payment/attendeeWorkShopPayment.js","../attendee/payment/viewPayment":"attendee/payment/viewPayment.js","../admin/workShop/viewWorkShops":"admin/workShop/viewWorkShops.js","../admin/attendee/viewAttendee":"admin/attendee/viewAttendee.js","../admin/attendee/viewAttendeeWorkShopPayments":"admin/attendee/viewAttendeeWorkShopPayments.js","../researcher/researcher":"researcher/researcher.js","../reviewer/reviewer":"reviewer/reviewer.js","../editor/editor":"editor/editor.js","../workShop/downloadTemplate/downloadPage":"workShop/downloadTemplate/downloadPage.js","../workShop/downloadTemplate/showPdf":"workShop/downloadTemplate/showPdf.js"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -67720,7 +67877,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64744" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60302" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
