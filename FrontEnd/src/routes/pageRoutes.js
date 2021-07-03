@@ -23,8 +23,25 @@ import ViewAttendeeWorkShopPayments from "../admin/attendee/viewAttendeeWorkShop
 import Researcher from "../researcher/researcher";
 import Reviewer from "../reviewer/reviewer";
 import Editor from "../editor/editor";
+<<<<<<< HEAD
 import DownloadPage from "../workShop/downloadTemplate/downloadPage";
 import ShowPdf from "../workShop/downloadTemplate/showPdf";
+=======
+import CreateConference from "../editor/addConference";
+import View from "../editor/view";
+import ManageConference from "../editor/manageConference";
+import UpdateConference from "../editor/updateConference";
+import CreateSpeaker from "../editor/addSpeaker";
+import ManageSpeakers from "../editor/manageSpeakers";
+import UpdateSpeaker from "../editor/updateSpeaker";
+import AdminConference from "../editor/admin/adminConference";
+import CreateTopic from "../editor/createTitle";
+import GetAllTopics from "../editor/manageTopics";
+import UpdateTopic from "../editor/updateTopic";
+import SingleTopic from "../editor/getOneTopic";
+
+
+>>>>>>> IT19151052
 
 function PageRoutes() {
     return (
@@ -54,6 +71,18 @@ function PageRoutes() {
                         <Route path="/contact-us" component={ContactUs}/>
                         <Route path="/about-us" component={AboutUs}/>
                         <Route path="/" component={Home} exact/>
+                        <Route path="/view" component={View} />
+                        <Route path="/create-conference" component={CreateConference}/>
+                        <Route path="/manage-conference" component={ManageConference} />
+                        <Route path="/conference/update/:conferenceId" component={UpdateConference} />
+                        <Route path="/create-speaker" component={CreateSpeaker}/>
+                        <Route path="/manage-speaker" component={ManageSpeakers}/>
+                        <Route path="/speaker/update/:speakerId" component={UpdateSpeaker}/>
+                        <Route path="/admin-editor" component={AdminConference}/>
+                        <Route path="/create-topic" component={CreateTopic}/>
+                        <Route path="/manage-topics" component={GetAllTopics}/>
+                        <Route path="/post/update/:slug"  component={UpdateTopic}/>
+                        <Route path="/post/:slug" exact component={SingleTopic}/>
                     </Switch>
                 </section>
                 <Footer/>
