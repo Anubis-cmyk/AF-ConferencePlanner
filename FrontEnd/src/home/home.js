@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import './css/home.css'
 import MenuCard from "./menuCard";
 import ParalaxContainer from "./paralaxContainer";
-import slide1 from './image/s1.png'
-import slide2 from './image/s2.png'
-import slide3 from './image/s3.png'
+import slide1 from './image/s1.png';
+import slide2 from './image/s2.png';
+import slide3 from './image/s3.png';
 
 class Home extends Component {
     render() {
         return (
-            <div >
+            <div>
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"

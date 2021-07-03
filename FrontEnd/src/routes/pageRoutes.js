@@ -23,8 +23,8 @@ import ViewAttendeeWorkShopPayments from "../admin/attendee/viewAttendeeWorkShop
 import Researcher from "../researcher/researcher";
 import Reviewer from "../reviewer/reviewer";
 import Editor from "../editor/editor";
-
-
+import DownloadPage from "../workShop/downloadTemplate/downloadPage";
+import ShowPdf from "../workShop/downloadTemplate/showPdf";
 
 function PageRoutes() {
     return (
@@ -46,6 +46,8 @@ function PageRoutes() {
                         <Route path="/workshop-attendee" component={ViewAttendeeRegistration}/>
                         <Route path="/workshop/registration" component={CreateWorkShop}/>
                         <Route path="/workshop/my" component={ViewWorkShop}/>
+                        <Route path="/workshop-template-download" component={DownloadPage}/>
+                        <Route path="/workshop-template" component={ShowPdf}/>
                         <Route path="/workshop" component={ViewApprovedWorkShops}/>
                         <Route path="/registration" component={Register}/>
                         <Route path="/signup" component={Signup}/>

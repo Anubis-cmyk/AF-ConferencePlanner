@@ -44,7 +44,7 @@ const viewAllWorkshops = async (req, res) => {
 const viewById = async (req, res) => {
     if (req.params && req.params.id) {
         await WorkShop.findById(req.params.id)
-            .populate('workshops', '_id organizerName organizerContactNo organizerEmail description proposalURL')
+            .populate('workshops', '_id organizerName organizerContactNo organizerEmail description proposalURL presenters')
             .then(response => {
                 res.status(200).send({ data: response });
             })

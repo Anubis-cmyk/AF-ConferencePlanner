@@ -39,53 +39,11 @@ class ViewWorkShops extends Component {
         })
     }
 
-    exportWorkShopPDF = () => {
-        console.log("SSSSSSSSSS")
-        const unit = "pt";
-        const size = "A3";
-        const orientation = "landscape";
-        const marginLeft = 40;
-        const doc = new jsPDF(orientation, unit, size);
-
-        const title = "WorkShop Report";
-        const headers = [["WorkShop Name", "Contact Number", "Email", "Title", "Description", "Estimated Duration(in days)", "Payment Amount($)", "Status"]];
-
-        const workshops = this.state.workshops.map(
-            workshops => [
-                workshops.organizerName,
-                workshops.organizerContactNo,
-                workshops.organizerEmail,
-                workshops.workShopTitle,
-                workshops.description,
-                workshops.estimatedDuration,
-                workshops.paymentAmount,
-                workshops.status,
-                workshops.date
-            ]
-        );
-
-        let content = {
-            startY: 50,
-            head: headers,
-            body: workshops
-        };
-        doc.setFontSize(20);
-        doc.text(title, marginLeft, 40);
-        require('jspdf-autotable');
-        doc.autoTable(content);
-        doc.save("WorkShops.pdf")
-    }
-
     render() {
         return (
             <div className="p-3">
                 <h1>Registered WorkShop List</h1>
                 <div className="card shadow p-3 mb-5 bg-body rounded">
-                    <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button className="btn btn-primary" onClick={()=>this.exportWorkShopPDF()}>
-                            Download Report <i className="fas fa-download"></i>
-                        </button>
-                    </div>
                     <div className="table-responsive">
                         <table className="table table-striped table-hover">
                             <thead>
@@ -95,7 +53,8 @@ class ViewWorkShops extends Component {
                                     <th>Organizer Email</th>
                                     <th>WorkShop Title</th>
                                     <th>Description</th>
-                                    <th>Proposal URL</th>
+                                    <th>Proposal</th>
+                                    <th>Presenters</th>
                                     <th>Estimated Duration(in days)</th>
                                     <th>Payment Amount($)</th>
                                     <th>Status</th>
@@ -112,7 +71,8 @@ class ViewWorkShops extends Component {
                                         <td>{item.organizerEmail}</td>
                                         <td>{item.workShopTitle}</td>
                                         <td>{item.description}</td>
-                                        <td>{item.proposalURL}</td>
+                                        <td><a href="/workshop-template">show</a></td>
+                                        <td>{item.presenters}</td>
                                         <td>{item.estimatedDuration}</td>
                                         <td>{item.paymentAmount}</td>
                                         {item.status == "not approved" &&
