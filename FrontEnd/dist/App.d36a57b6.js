@@ -63429,8 +63429,133 @@ module.hot.accept(reloadCSS);
           var x,
               S = c.pixelBitlength - c.bits;
 
+<<<<<<< HEAD
           for (w = 0, N = 0; w < g; w++) {
             for (y = p[w], x = 0; x < S;) v[N++] = y >>> x & 255, x += c.bits;
+=======
+  _createClass(NavBar, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        "data-testid": "nav-1"
+      }, /*#__PURE__*/_react.default.createElement("nav", {
+        className: "navbar navbar-expand-lg navbar-dark bg-dark"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "container-fluid"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "navbar-brand",
+        href: "/"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: _logo.default,
+        alt: "",
+        width: "30",
+        height: "24",
+        class: "d-inline-block align-text-top"
+      }), "\xA0I", /*#__PURE__*/_react.default.createElement("span", null, "CAC")), /*#__PURE__*/_react.default.createElement("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-bs-toggle": "collapse",
+        "data-bs-target": "#navbarNav",
+        "aria-controls": "navbarNav",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation"
+      }, /*#__PURE__*/_react.default.createElement("span", {
+        className: "navbar-toggler-icon"
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "collapse navbar-collapse",
+        id: "navbarNav"
+      }, /*#__PURE__*/_react.default.createElement("ul", {
+        className: "navbar-nav"
+      }, /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link active",
+        "aria-current": "page",
+        href: "/"
+      }, "Home")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop"
+      }, "WorkShop")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop/my"
+      }, "My WorkShops")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop/registration"
+      }, "WorkShop Registration")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop-attendee"
+      }, "Attendee")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop-attendee/registration"
+      }, "Attendee Registration")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop-payment"
+      }, "Attendee payments")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/workshop-payment/create"
+      }, "Attendee payment Submit")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/admin"
+      }, "Admin")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/admin/workshop"
+      }, "Admin workshop")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/admin/attendee-workshop"
+      }, "Admin Attendee")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/admin/attendee-payments"
+      }, "Admin Payments")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/editor"
+      }, "Conference")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/researcher"
+      }, "Researcher")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/research-paper"
+      }, "Research Papers")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/research-payment-details"
+      }, "Research Payment Details")), /*#__PURE__*/_react.default.createElement("li", {
+        className: "nav-item"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        className: "nav-link",
+        href: "/reviewer"
+      }, "Reviewer")))))));
+    }
+  }]);
+>>>>>>> IT19395906
 
             m[w] = y >>> x & 255;
           }
@@ -108134,6 +108259,7 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 var _axios = _interopRequireDefault(require("axios"));
 
@@ -108146,13 +108272,25 @@ var _layout = _interopRequireDefault(require("./layout"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 >>>>>>> IT19151052
+=======
+var _axios = _interopRequireDefault(require("axios"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+>>>>>>> IT19395906
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
+<<<<<<< HEAD
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+=======
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+>>>>>>> IT19395906
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -108189,16 +108327,136 @@ var Researcher = /*#__PURE__*/function (_Component) {
 
   var _super = _createSuper(Researcher);
 
-  function Researcher() {
+  function Researcher(props) {
+    var _this;
+
     _classCallCheck(this, Researcher);
 
-    return _super.apply(this, arguments);
+    _this = _super.call(this, props);
+    _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+    _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+    _this.state = {
+      title: '',
+      description: '',
+      author: '',
+      email: '',
+      number: '',
+      paper: ''
+    };
+    return _this;
   }
 
   _createClass(Researcher, [{
+    key: "onChange",
+    value: function onChange(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: "onSubmit",
+    value: function onSubmit(e) {
+      e.preventDefault();
+      var researchppr = {
+        title: this.state.title,
+        description: this.state.description,
+        author: this.state.author,
+        email: this.state.email,
+        number: this.state.number,
+        paper: this.state.paper
+      };
+      console.log(researchppr);
+
+      _axios.default.post('http://localhost:8080/research/create', researchppr).then(function (response) {
+        alert('data successfully insert');
+      }).catch(function (error) {
+        console.log(error.message);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, " Researcher");
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("h3", null, "Add Research Paper"), /*#__PURE__*/_react.default.createElement("form", {
+        onSubmit: this.onSubmit
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "form-group"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "title"
+      }, "Title"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "title",
+        name: "title",
+        value: this.state.title,
+        onChange: this.onChange,
+        "aria-describedby": "emailHelp",
+        placeholder: "Enter Title"
+      })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "description",
+        className: "form-label"
+      }, "Description"), /*#__PURE__*/_react.default.createElement("textarea", {
+        className: "form-control",
+        id: "description",
+        name: "description",
+        value: this.state.description,
+        onChange: this.onChange,
+        placeholder: "Enter Description"
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "form-group"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "author"
+      }, "Author"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "author",
+        name: "author",
+        value: this.state.author,
+        onChange: this.onChange,
+        "aria-describedby": "emailHelp",
+        placeholder: "Enter Author"
+      })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "form-group"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "email"
+      }, "Author Email"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "email",
+        name: "email",
+        value: this.state.email,
+        onChange: this.onChange,
+        placeholder: "Enter Email"
+      })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "form-group"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "number"
+      }, "Contact Number"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "number",
+        className: "form-control",
+        id: "number",
+        name: "number",
+        value: this.state.number,
+        onChange: this.onChange,
+        "aria-describedby": "emailHelp",
+        placeholder: "Enter Number"
+      })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "paper",
+        className: "form-label"
+      }, "Paper"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "file",
+        className: "form-control",
+        id: "paper",
+        name: "paper",
+        value: this.state.paper,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("button", {
+        type: "submit",
+        className: "btn btn-primary"
+      }, "Submit")));
     }
   }]);
 
@@ -108207,7 +108465,7 @@ var Researcher = /*#__PURE__*/function (_Component) {
 
 var _default = Researcher;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"reviewer/reviewer.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js"}],"reviewer/reviewer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -108445,6 +108703,7 @@ var GetAllTopics = function GetAllTopics() {
 
 var _default = Editor;
 exports.default = _default;
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js"}],"workShop/downloadTemplate/style/downloadPage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
@@ -108520,6 +108779,9 @@ var _default = GetAllTopics;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","react-render-html":"../node_modules/react-render-html/index.js","./layout":"editor/layout.js"}],"editor/updateTopic.js":[function(require,module,exports) {
 >>>>>>> IT19151052
+=======
+},{"react":"../node_modules/react/index.js"}],"researcher/viewResearchPaper.js":[function(require,module,exports) {
+>>>>>>> IT19395906
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -108529,6 +108791,7 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 require("./style/downloadPage.css");
 
@@ -108542,6 +108805,11 @@ require("react-quill/dist/quill.snow.css");
 
 var _layout = _interopRequireDefault(require("./layout"));
 >>>>>>> IT19151052
+=======
+var _axios = _interopRequireDefault(require("axios"));
+
+var _jspdf = _interopRequireDefault(require("jspdf"));
+>>>>>>> IT19395906
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -108549,6 +108817,7 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
+<<<<<<< HEAD
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -108750,6 +109019,131 @@ var _default = UpdateTopic;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","react-quill":"../node_modules/react-quill/lib/index.js","react-quill/dist/quill.snow.css":"../node_modules/react-quill/dist/quill.snow.css","./layout":"editor/layout.js"}],"editor/getOneTopic.js":[function(require,module,exports) {
 >>>>>>> IT19151052
+=======
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var ViewResearchPaper = /*#__PURE__*/function (_Component) {
+  _inherits(ViewResearchPaper, _Component);
+
+  var _super = _createSuper(ViewResearchPaper);
+
+  function ViewResearchPaper(props) {
+    var _this;
+
+    _classCallCheck(this, ViewResearchPaper);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "download", function () {
+      var doc = new _jspdf.default();
+      doc.text("paper", 20, 20);
+      doc.save("Paper.pdf");
+    });
+
+    _this.deleteResearchPaper = _this.deleteResearchPaper.bind(_assertThisInitialized(_this));
+    _this.state = {
+      researchPapers: []
+    };
+    return _this;
+  }
+
+  _createClass(ViewResearchPaper, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      _axios.default.get('http://localhost:8080/research/').then(function (response) {
+        _this2.setState({
+          researchPapers: response.data.data
+        });
+
+        console.log(response.data);
+      });
+    }
+  }, {
+    key: "deleteResearchPaper",
+    value: function deleteResearchPaper(e, id) {
+      var _this3 = this;
+
+      _axios.default.delete('http://localhost:8080/research/delete/:id').then(function (response) {
+        _this3.componentDidMount();
+
+        alert("Delete successfully!");
+      });
+    }
+  }, {
+    key: "navigatePaymentPage",
+    value: function navigatePaymentPage(e) {
+      window.location = "/research-paper-payment";
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("h3", null, "Research Papers"), this.state.researchPapers.length > 0 && this.state.researchPapers.map(function (item, index) {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          key: index,
+          className: "card mb-3"
+        }, /*#__PURE__*/_react.default.createElement("div", {
+          className: "p-3"
+        }, /*#__PURE__*/_react.default.createElement("h4", null, "Title: ", item.title), /*#__PURE__*/_react.default.createElement("h5", null, "Description: ", item.description), /*#__PURE__*/_react.default.createElement("h5", null, "Author: ", item.author), /*#__PURE__*/_react.default.createElement("h5", null, "Paper: ", item.paper), /*#__PURE__*/_react.default.createElement("button", {
+          type: "submit",
+          className: "btn btn-primary",
+          onClick: _this4.download
+        }, "Download"), /*#__PURE__*/_react.default.createElement("button", {
+          style: {
+            marginLeft: "20px"
+          },
+          type: "submit",
+          className: "btn btn-primary",
+          onClick: function onClick(e) {
+            return _this4.navigatePaymentPage(e);
+          }
+        }, "Approve"), /*#__PURE__*/_react.default.createElement("button", {
+          style: {
+            marginLeft: "20px"
+          },
+          onClick: function onClick(e) {
+            return _this4.deleteResearchPaper(e, item._id);
+          },
+          className: "btn btn-danger"
+        }, "Delete")));
+      }));
+    }
+  }]);
+
+  return ViewResearchPaper;
+}(_react.Component);
+
+var _default = ViewResearchPaper;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","jspdf":"../node_modules/jspdf/dist/jspdf.es.min.js"}],"researcher/researchPaperPayment.js":[function(require,module,exports) {
+>>>>>>> IT19395906
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -108760,7 +109154,11 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var _proposal = _interopRequireDefault(require("./pdf/proposal.pdf"));
+=======
+var _axios = _interopRequireDefault(require("axios"));
+>>>>>>> IT19395906
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -108770,6 +109168,7 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+<<<<<<< HEAD
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 =======
 var _axios = _interopRequireDefault(require("axios"));
@@ -108778,6 +109177,211 @@ var _axios = _interopRequireDefault(require("axios"));
 var _reactRenderHtml = _interopRequireDefault(require("react-render-html"));
 
 require("./view.css");
+=======
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ResearchPaperPayment = /*#__PURE__*/function (_Component) {
+  _inherits(ResearchPaperPayment, _Component);
+
+  var _super = _createSuper(ResearchPaperPayment);
+
+  function ResearchPaperPayment(props) {
+    var _this;
+
+    _classCallCheck(this, ResearchPaperPayment);
+
+    _this = _super.call(this, props);
+    _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
+    _this.onSubmit = _this.onSubmit.bind(_assertThisInitialized(_this));
+    _this.state = {
+      name: '',
+      contactNo: '',
+      email: '',
+      depositedAmount: 0,
+      depositedDate: '',
+      bank: '',
+      branch: '',
+      paymentSlip: ''
+    };
+    return _this;
+  }
+
+  _createClass(ResearchPaperPayment, [{
+    key: "onChange",
+    value: function onChange(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: "onSubmit",
+    value: function onSubmit(e) {
+      e.preventDefault(); //create a object to send to database
+
+      var researchPaperPayment = {
+        name: this.state.name,
+        contactNo: this.state.contactNo,
+        email: this.state.email,
+        depositedAmount: this.state.depositedAmount,
+        depositedDate: this.state.depositedDate,
+        bank: this.state.bank,
+        branch: this.state.branch,
+        paymentSlip: this.state.paymentSlip
+      };
+      console.log('data to send', researchPaperPayment);
+
+      _axios.default.post('http://localhost:8080/researchpaperpayment/create', researchPaperPayment).then(function (response) {
+        alert('Data successfully inserted');
+      }).catch(function (error) {
+        console.log(error.message);
+        alert(error.message);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("h1", null, "Payment for Approved Research Papers"), /*#__PURE__*/_react.default.createElement("form", {
+        onSubmit: this.onSubmit
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "name",
+        className: "form-label"
+      }, "Full Name"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "name",
+        name: "name",
+        value: this.state.name,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "contactNo",
+        className: "form-label"
+      }, "contactNo"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "contactNo",
+        name: "contactNo",
+        value: this.state.contactNo,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "email",
+        className: "form-label"
+      }, "email"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "email",
+        name: "email",
+        value: this.state.email,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "depositedAmount",
+        className: "form-label"
+      }, "depositedAmount"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "depositedAmount",
+        name: "depositedAmount",
+        value: this.state.depositedAmount,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "depositedDate",
+        className: "form-label"
+      }, "depositedDate"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "date",
+        className: "form-control",
+        id: "depositedDate",
+        name: "depositedDate",
+        value: this.state.depositedDate,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "bank",
+        className: "form-label"
+      }, "bank"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "bank",
+        name: "bank",
+        value: this.state.bank,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "branch",
+        className: "form-label"
+      }, "branch"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "text",
+        className: "form-control",
+        id: "branch",
+        name: "branch",
+        value: this.state.branch,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "mb-3"
+      }, /*#__PURE__*/_react.default.createElement("label", {
+        htmlFor: "paymentSlip",
+        className: "form-label"
+      }, "paymentSlip"), /*#__PURE__*/_react.default.createElement("input", {
+        type: "file",
+        className: "form-control",
+        id: "paymentSlip",
+        name: "paymentSlip",
+        value: this.state.paymentSlip,
+        onChange: this.onChange
+      })), /*#__PURE__*/_react.default.createElement("button", {
+        type: "submit",
+        className: "btn btn-primary"
+      }, "Submit")));
+    }
+  }]);
+
+  return ResearchPaperPayment;
+}(_react.Component);
+
+var _default = ResearchPaperPayment;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js"}],"researcher/viewPaymentDetails.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _axios = _interopRequireDefault(require("axios"));
+>>>>>>> IT19395906
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -108785,6 +109389,7 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
+<<<<<<< HEAD
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -108864,6 +109469,82 @@ var _default = SingleTopic;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js","react-render-html":"../node_modules/react-render-html/index.js","./view.css":"editor/view.css"}],"routes/pageRoutes.js":[function(require,module,exports) {
 >>>>>>> IT19151052
+=======
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ViewPaymentDetails = /*#__PURE__*/function (_Component) {
+  _inherits(ViewPaymentDetails, _Component);
+
+  var _super = _createSuper(ViewPaymentDetails);
+
+  function ViewPaymentDetails(props) {
+    var _this;
+
+    _classCallCheck(this, ViewPaymentDetails);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      paymentDetails: []
+    };
+    return _this;
+  }
+
+  _createClass(ViewPaymentDetails, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      _axios.default.get('http://localhost:8080/researchpaperpayment/').then(function (response) {
+        _this2.setState({
+          paymentDetails: response.data.data
+        });
+
+        console.log(response.data);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("h3", null, "Payment Details"), this.state.paymentDetails.length > 0 && this.state.paymentDetails.map(function (item, index) {
+        return /*#__PURE__*/_react.default.createElement("div", {
+          key: index,
+          className: "card mb-3"
+        }, /*#__PURE__*/_react.default.createElement("div", {
+          className: "p-3"
+        }, /*#__PURE__*/_react.default.createElement("h5", null, "Full Name: ", item.name), /*#__PURE__*/_react.default.createElement("h6", null, "Contact No: ", item.contactNo), /*#__PURE__*/_react.default.createElement("h6", null, "Email: ", item.email), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Amount: ", item.depositedAmount), /*#__PURE__*/_react.default.createElement("h6", null, "Deposited Date: ", item.depositedDate), /*#__PURE__*/_react.default.createElement("h6", null, "Bank: ", item.bank), /*#__PURE__*/_react.default.createElement("h6", null, "Branch: ", item.branch)));
+      }));
+    }
+  }]);
+
+  return ViewPaymentDetails;
+}(_react.Component);
+
+var _default = ViewPaymentDetails;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","axios":"../node_modules/axios/index.js"}],"routes/pageRoutes.js":[function(require,module,exports) {
+>>>>>>> IT19395906
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -108918,6 +109599,7 @@ var _reviewer = _interopRequireDefault(require("../reviewer/reviewer"));
 var _editor = _interopRequireDefault(require("../editor/editor"));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var _downloadPage = _interopRequireDefault(require("../workShop/downloadTemplate/downloadPage"));
 
 var _showPdf = _interopRequireDefault(require("../workShop/downloadTemplate/showPdf"));
@@ -108946,6 +109628,13 @@ var _updateTopic = _interopRequireDefault(require("../editor/updateTopic"));
 
 var _getOneTopic = _interopRequireDefault(require("../editor/getOneTopic"));
 >>>>>>> IT19151052
+=======
+var _viewResearchPaper = _interopRequireDefault(require("../researcher/viewResearchPaper"));
+
+var _researchPaperPayment = _interopRequireDefault(require("../researcher/researchPaperPayment"));
+
+var _viewPaymentDetails = _interopRequireDefault(require("../researcher/viewPaymentDetails"));
+>>>>>>> IT19395906
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -108959,6 +109648,15 @@ function PageRoutes() {
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/researcher",
     component: _researcher.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/research-paper",
+    component: _viewResearchPaper.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/research-paper-payment",
+    component: _researchPaperPayment.default
+  }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+    path: "/research-payment-details",
+    component: _viewPaymentDetails.default
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: "/editor",
     component: _editor.default
@@ -109060,10 +109758,14 @@ function PageRoutes() {
 var _default = PageRoutes;
 exports.default = _default;
 <<<<<<< HEAD
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../home/home":"home/home.js","../home/navBar":"home/navBar.js","../home/footer":"home/footer.js","../aboutUs/aboutUs":"aboutUs/aboutUs.js","../contactUs/contactUs":"contactUs/contactUs.js","../admin/home/adminHome":"admin/home/adminHome.js","../register/register":"register/register.js","../comman/Login":"comman/Login.js","../workShop/viewWorkShop":"workShop/viewWorkShop.js","../workShop/viewApprovedWorkShops":"workShop/viewApprovedWorkShops.js","../workShop/createWorkShop":"workShop/createWorkShop.js","../attendee/workshopRegistration/attendeeWorkshopRegistration":"attendee/workshopRegistration/attendeeWorkshopRegistration.js","../attendee/workshopRegistration/viewAttendeeRegistration":"attendee/workshopRegistration/viewAttendeeRegistration.js","../attendee/payment/attendeeWorkShopPayment":"attendee/payment/attendeeWorkShopPayment.js","../attendee/payment/viewPayment":"attendee/payment/viewPayment.js","../admin/workShop/viewWorkShops":"admin/workShop/viewWorkShops.js","../admin/attendee/viewAttendee":"admin/attendee/viewAttendee.js","../admin/attendee/viewAttendeeWorkShopPayments":"admin/attendee/viewAttendeeWorkShopPayments.js","../researcher/researcher":"researcher/researcher.js","../reviewer/reviewer":"reviewer/reviewer.js","../editor/editor":"editor/editor.js","../workShop/downloadTemplate/downloadPage":"workShop/downloadTemplate/downloadPage.js","../workShop/downloadTemplate/showPdf":"workShop/downloadTemplate/showPdf.js"}],"App.js":[function(require,module,exports) {
 =======
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../home/home":"home/home.js","../home/navBar":"home/navBar.js","../home/footer":"home/footer.js","../aboutUs/aboutUs":"aboutUs/aboutUs.js","../contactUs/contactUs":"contactUs/contactUs.js","../admin/home/adminHome":"admin/home/adminHome.js","../register/register":"register/register.js","../comman/Login":"comman/Login.js","../workShop/viewWorkShop":"workShop/viewWorkShop.js","../workShop/viewApprovedWorkShops":"workShop/viewApprovedWorkShops.js","../workShop/createWorkShop":"workShop/createWorkShop.js","../attendee/workshopRegistration/attendeeWorkshopRegistration":"attendee/workshopRegistration/attendeeWorkshopRegistration.js","../attendee/workshopRegistration/viewAttendeeRegistration":"attendee/workshopRegistration/viewAttendeeRegistration.js","../attendee/payment/attendeeWorkShopPayment":"attendee/payment/attendeeWorkShopPayment.js","../attendee/payment/viewPayment":"attendee/payment/viewPayment.js","../admin/workShop/viewWorkShops":"admin/workShop/viewWorkShops.js","../admin/attendee/viewAttendee":"admin/attendee/viewAttendee.js","../admin/attendee/viewAttendeeWorkShopPayments":"admin/attendee/viewAttendeeWorkShopPayments.js","../researcher/researcher":"researcher/researcher.js","../reviewer/reviewer":"reviewer/reviewer.js","../editor/editor":"editor/editor.js","../editor/addConference":"editor/addConference.js","../editor/view":"editor/view.js","../editor/manageConference":"editor/manageConference.js","../editor/updateConference":"editor/updateConference.js","../editor/addSpeaker":"editor/addSpeaker.js","../editor/manageSpeakers":"editor/manageSpeakers.js","../editor/updateSpeaker":"editor/updateSpeaker.js","../editor/admin/adminConference":"editor/admin/adminConference.js","../editor/createTitle":"editor/createTitle.js","../editor/manageTopics":"editor/manageTopics.js","../editor/updateTopic":"editor/updateTopic.js","../editor/getOneTopic":"editor/getOneTopic.js"}],"App.js":[function(require,module,exports) {
 >>>>>>> IT19151052
+=======
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../home/home":"home/home.js","../home/navBar":"home/navBar.js","../home/footer":"home/footer.js","../aboutUs/aboutUs":"aboutUs/aboutUs.js","../contactUs/contactUs":"contactUs/contactUs.js","../admin/home/adminHome":"admin/home/adminHome.js","../register/register":"register/register.js","../comman/Login":"comman/Login.js","../workShop/viewWorkShop":"workShop/viewWorkShop.js","../workShop/viewApprovedWorkShops":"workShop/viewApprovedWorkShops.js","../workShop/createWorkShop":"workShop/createWorkShop.js","../attendee/workshopRegistration/attendeeWorkshopRegistration":"attendee/workshopRegistration/attendeeWorkshopRegistration.js","../attendee/workshopRegistration/viewAttendeeRegistration":"attendee/workshopRegistration/viewAttendeeRegistration.js","../attendee/payment/attendeeWorkShopPayment":"attendee/payment/attendeeWorkShopPayment.js","../attendee/payment/viewPayment":"attendee/payment/viewPayment.js","../admin/workShop/viewWorkShops":"admin/workShop/viewWorkShops.js","../admin/attendee/viewAttendee":"admin/attendee/viewAttendee.js","../admin/attendee/viewAttendeeWorkShopPayments":"admin/attendee/viewAttendeeWorkShopPayments.js","../researcher/researcher":"researcher/researcher.js","../reviewer/reviewer":"reviewer/reviewer.js","../editor/editor":"editor/editor.js","../researcher/viewResearchPaper":"researcher/viewResearchPaper.js","../researcher/researchPaperPayment":"researcher/researchPaperPayment.js","../researcher/viewPaymentDetails":"researcher/viewPaymentDetails.js"}],"App.js":[function(require,module,exports) {
+>>>>>>> IT19395906
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -109110,10 +109812,14 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "60481" + '/');
 =======
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "65139" + '/');
 >>>>>>> IT19151052
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10402" + '/');
+>>>>>>> IT19395906
 
   ws.onmessage = function (event) {
     checkedAssets = {};

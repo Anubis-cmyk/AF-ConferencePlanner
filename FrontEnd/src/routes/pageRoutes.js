@@ -23,22 +23,9 @@ import ViewAttendeeWorkShopPayments from "../admin/attendee/viewAttendeeWorkShop
 import Researcher from "../researcher/researcher";
 import Reviewer from "../reviewer/reviewer";
 import Editor from "../editor/editor";
-<<<<<<< HEAD
-import DownloadPage from "../workShop/downloadTemplate/downloadPage";
-import ShowPdf from "../workShop/downloadTemplate/showPdf";
-=======
-import CreateConference from "../editor/addConference";
-import View from "../editor/view";
-import ManageConference from "../editor/manageConference";
-import UpdateConference from "../editor/updateConference";
-import CreateSpeaker from "../editor/addSpeaker";
-import ManageSpeakers from "../editor/manageSpeakers";
-import UpdateSpeaker from "../editor/updateSpeaker";
-import AdminConference from "../editor/admin/adminConference";
-import CreateTopic from "../editor/createTitle";
-import GetAllTopics from "../editor/manageTopics";
-import UpdateTopic from "../editor/updateTopic";
-import SingleTopic from "../editor/getOneTopic";
+import ViewResearchPaper from "../researcher/viewResearchPaper";
+import ResearchPaperPayment from "../researcher/researchPaperPayment";
+import ViewPaymentDetails from "../researcher/viewPaymentDetails";
 
 
 >>>>>>> IT19151052
@@ -52,6 +39,9 @@ function PageRoutes() {
                     <Switch>
                         <Route path="/reviewer" component={Reviewer}/>
                         <Route path="/researcher" component={Researcher}/>
+                        <Route path="/research-paper" component={ViewResearchPaper}/>
+                        <Route path="/research-paper-payment" component={ResearchPaperPayment}/>
+                        <Route path="/research-payment-details" component={ViewPaymentDetails}/>
                         <Route path="/editor" component={Editor}/>
                         <Route path="/admin/attendee-payments" component={ViewAttendeeWorkShopPayments}/>
                         <Route path="/admin/attendee-workshop" component={ViewAttendee}/>
