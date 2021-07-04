@@ -22,7 +22,7 @@ class MenuCard extends Component {
                                     Discover which breakthrough technologies and global trends have staying
                                     power and get the trustworthy, actionable guidance you need for your
                                     strategic and visionary planning.</p>
-                                <a href="#" className="button button2">Get start</a>
+                                <a href="/view" className="button button2">Get start</a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ class MenuCard extends Component {
                                     Technology. Discover open association of excellent Professionals,
                                     and Scholars and help researchers & professionals to carry and
                                     accomplish their research</p>
-                                <a href="#" className="button button2">Get start</a>
+                                <a href="/research-paper" className="button button2">Get start</a>
                             </div>
                         </div>
                     </div>

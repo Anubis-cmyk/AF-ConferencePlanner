@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import Select from 'react-select';
+import {Link} from "react-router-dom";
 
 //Initial states of input fields
 const initialState = {
@@ -38,13 +39,16 @@ class Registraion extends Component {
             password: this.state.password,
             type: this.state.type
         }
+
         console.log(user);
         //call the end point and pass the values using axios
         console.log('data to send', user);
         axios.post('http://localhost:8080/user/signUp', user )
             .then(response => {
                 alert('Data successfully inserted')
+                localStorage.setItem('User',JSON.stringify(user));
                 this.props.history.push('/');
+
             })
             .catch(error => {
                 console.log(error.message );
@@ -135,6 +139,7 @@ class Registraion extends Component {
                             <div className="d-grid gap-2">
                                 <button type="submit" className="btn btn-primary">Register</button>
                             </div>
+                           <Link  to="/signin">Already have a account ? Sign In</Link>
                         </form>
 
                     </div>

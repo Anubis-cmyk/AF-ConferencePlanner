@@ -44,7 +44,7 @@ class ViewPayment extends Component {
                                 <div className="card shadow p-3 mb-5 bg-body rounded">
                                     {item.status == "not validated" &&
                                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button className="btn btn-outline-danger" onClick={e => this.deletePayment(e,item._id)}><i className="fas fa-trash"></i></button>
+                                            <button className="btn btn-outline-danger" onClick={e => this.deletePayment(e,item._id)}><i className="fas fa-trash">&nbsp;&nbsp;DELETE</i></button>
                                         </div>
                                     }
                                     <div className="row">

@@ -13,16 +13,16 @@ class Footer extends Component {
                 <br/><br/><br/><br/><br/>
                 <footer className="footer-distributed">
                     <div className="footer-left">
-                        <h3>I<span>CAC</span></h3>
+                        <h3>I<span>CAF</span></h3>
                         <p className="footer-links">
-                            <a href="/">Home</a>
+                            <a  href="/">Home</a>
                             ·
-                            <a href="/"> Conference</a>
+                            <a className="mr-5" href="/view"> Conference</a>
                             ·
-                            <a href="/"> WorkShop</a>
+                            <a className="mr-5" href="/workshop"> WorkShop</a>
                         </p>
 
-                        <p className="footer-company-name">ICAC &copy; 2019</p>
+                        <p className="footer-company-name">ICAF &copy; 2019</p>
                     </div>
 
                     <div className="footer-center">
@@ -39,7 +39,7 @@ class Footer extends Component {
 
                         <div>
                             <i className="fa fa-envelope"/>
-                            <p><a href="#">info@icac.com</a></p>
+                            <p><a href="#">info@icaf.com</a></p>
                         </div>
 
                     </div>

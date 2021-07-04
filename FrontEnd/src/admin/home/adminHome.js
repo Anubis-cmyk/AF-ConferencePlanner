@@ -46,7 +46,7 @@ class AdminHome extends Component {
                         </a>
                     </div>
                     <div className="col">
-                        <a href="#">
+                        <a href="/admin-editor">
                             <div className="card shadow p-3 mb-5 bg-body rounded">
                                 <h6>Conference</h6>
                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -56,7 +56,7 @@ class AdminHome extends Component {
                         </a>
                     </div>
                     <div className="col">
-                        <a href="#">
+                        <a href="/research-paper">
                             <div className="card shadow p-3 mb-5 bg-body rounded">
                                 <h6>Research</h6>
                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">

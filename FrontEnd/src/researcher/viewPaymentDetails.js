@@ -8,6 +8,12 @@ class ViewPaymentDetails extends Component {
             paymentDetails: []
         }
     }
+    deletePaymentDetails(e, id){
+        axios.delete(`http://localhost:8080/researchpaperpayment/delete/${id}`).then(response => {
+            this.componentDidMount()
+            alert("Delete successfully!");
+        })
+    }
 
     componentDidMount() {
         axios.get('http://localhost:8080/researchpaperpayment/').then(response => {
@@ -29,6 +35,7 @@ class ViewPaymentDetails extends Component {
                             <h6>Deposited Date: {item.depositedDate}</h6>
                             <h6>Bank: {item.bank}</h6>
                             <h6>Branch: {item.branch}</h6>
+                            <button style={{marginLeft: "20px"}} onClick = {e => this.deletePaymentDetails(e, item._id)} className="btn btn-danger">Delete</button>
                         </div>
                     </div>
                 ))}

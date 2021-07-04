@@ -59,6 +59,7 @@ const signup =async (req,res)=>{
 
         //create jwt token
         const token = jwt.sign({email: result.email,id:result.id},process.env.USERSTRING,{expiresIn:'1h'});
+
         res.status(200).json({result,token});
 
     }catch (e) {

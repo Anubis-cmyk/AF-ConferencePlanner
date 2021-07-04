@@ -39,6 +39,7 @@ import UpdateTopic from "../editor/updateTopic";
 import SingleTopic from "../editor/getOneTopic";
 import ShowPdf from "../workShop/downloadTemplate/showPdf";
 import DownloadPage from "../workShop/downloadTemplate/downloadPage";
+import SignIn from "../register/SignIn";
 
 function PageRoutes() {
     return (
@@ -67,6 +68,7 @@ function PageRoutes() {
                         <Route path="/workshop-template" component={ShowPdf}/>
                         <Route path="/workshop" component={ViewApprovedWorkShops}/>
                         <Route path="/registration" component={Register}/>
+                        <Route path="/signin" component={SignIn}/>
                         <Route path="/contact-us" component={ContactUs}/>
                         <Route path="/about-us" component={AboutUs}/>
                         <Route path="/" component={Home} exact/>

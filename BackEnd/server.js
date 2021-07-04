@@ -10,6 +10,9 @@ const contactUsAPI = require('./src/api/contactUsAPI/contactUsAPI');
 const UserAPI = require('./src/api/userAPI/userAPI');
 const researchAPI = require('./src/api/researcherAPI/researcherAPI');
 const ResearchPaperPaymentAPI = require('./src/api/researcherAPI/researchPaperPaymentAPI');
+const conferenceAPI = require('./src/api/editorAPI/conferenceAPI');
+const speakerAPI = require('./src/api/editorAPI/speakerAPI');
+const topicAPI = require('./src/api/editorAPI/topicAPI');
 
 dotenv.config();
 const app = express();
@@ -52,6 +55,9 @@ app.use('/contact-us',contactUsAPI());
 app.use('/user',UserAPI());
 app.use('/research', researchAPI());
 app.use('/researchpaperpayment', ResearchPaperPaymentAPI());
+app.use('/conference', conferenceAPI);
+app.use('/speaker', speakerAPI);
+app.use('/topic', topicAPI);
 
 
 app.listen(PORT,()=>{

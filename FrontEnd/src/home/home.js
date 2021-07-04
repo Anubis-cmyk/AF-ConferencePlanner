@@ -23,22 +23,22 @@ class Home extends Component {
                         <div className="carousel-item active">
                             <img src={slide1} className="d-block w-100" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>WELCOME TO ICAC</h5>
-                                <p>The International Conference on Advancements in Computing</p>
+                                <h5>WELCOME TO ICAF</h5>
+                                <p>THE INTERNATIONAL CONFERENCE ON APPLICATION FRAMEWROKS</p>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={slide2} className="d-block w-100" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>WELCOME TO ICAC</h5>
-                                <p>The International Conference on Advancements in Computing</p>
+                                <h5>WELCOME TO ICAF</h5>
+                                 <p>THE INTERNATIONAL CONFERENCE ON APPLICATION FRAMEWROKS</p>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <img src={slide3} className="d-block w-100" alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>WELCOME TO ICAC</h5>
-                                <p>The International Conference on Advancements in Computing</p>
+                                <h5>WELCOME TO ICAF</h5>
+                                <p>THE INTERNATIONAL CONFERENCE ON APPLICATION FRAMEWROKS</p>
                             </div>
                         </div>
                     </div>
@@ -61,9 +61,9 @@ class Home extends Component {
                         <div className="container p-3">
                             <div className="container p-3">
                                 <div className="container p-3">
-                                    <h2><b>ICAC</b></h2>
+                                    <h2><b>ICAF</b></h2>
                                     <p>
-                                        The International Conference on Advancements in Computing (ICAC) is organized by the Faculty of Computing of the Sri Lanka Institute of Information Technology (SLIIT) as an open forum for academics along with industry professionals to present the latest findings and research output and practical deployments in the Computer Science and Information Technology domains. Primary objective of the ICAC is to uplift the research culture and the quality of research done by Sri Lankan researchers. This conference will create a platform for national and international researchers to showcase their research output, networking opportunities to discuss innovative ideas, and initiate collaborative work. ICAC 2019 and ICAC 2020 were successfully conducted with a technical co-sponsorship by IEEE Sri Lanka Section and all publications are available in IEEE Xplore digital library
+                                        The International Conference on Advancements in Computing (ICAF) is organized by the Faculty of Computing of the Sri Lanka Institute of Information Technology (SLIIT) as an open forum for academics along with industry professionals to present the latest findings and research output and practical deployments in the Computer Science and Information Technology domains. Primary objective of the ICAF is to uplift the research culture and the quality of research done by Sri Lankan researchers. This conference will create a platform for national and international researchers to showcase their research output, networking opportunities to discuss innovative ideas, and initiate collaborative work. ICAF 2019 and ICAF 2020 were successfully conducted with a technical co-sponsorship by IEEE Sri Lanka Section and all publications are available in IEEE Xplore digital library
                                     </p>
                                     <br/>
                                     <ul className="list-unstyled">

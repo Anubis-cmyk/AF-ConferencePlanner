@@ -41,10 +41,20 @@ class ViewAttendeeRegistration extends Component {
                         {this.state.attendees.length > 0 && this.state.attendees.map((item,index) => (
                             <div key={index}>
                                 <div className="card shadow p-3 mb-5 bg-body rounded">
-                                    {item.status == "not approved" &&
-                                        <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button className="btn btn-outline-danger" onClick={e => this.deletePayment(e,item._id)}><i className="fas fa-trash"></i></button>
-                                        </div>
+
+                            {item.status == "not approved" &&
+                                    <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button className="btn btn-outline-danger" onClick={e => this.deletePayment(e,item._id)}>
+                                <i className="fas fa-trash">&nbsp;&nbsp;DELETE</i></button>
+                                </div>
+                                }
+                                    {item.status == "approved" &&
+                                    <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button className="btn btn-outline-success" onClick={()=>{
+                                        window.location.replace('/workshop-payment/create')
+                                    }}>
+                                    <i className="fas fa-dollar-sign">&nbsp;&nbsp;PAY</i></button>
+                                    </div>
                                     }
                                     <div className="row">
                                         <dt className="col-sm-2">Name</dt>
