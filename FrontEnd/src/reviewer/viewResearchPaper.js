@@ -16,13 +16,21 @@ class ViewResearchPaper extends Component {
             console.log(response.data);
         })
     }
-
-    deleteResearchPaper(e, id){
-        axios.delete('http://localhost:8080/research/delete/:id').then(response => {
+ 
+    approve(e, id){
+        
+        axios.put(`http://localhost:8080/research/update-status/${id}`, {status: "approved", id:id})
+        .then(response => { 
             this.componentDidMount()
-            alert("Delete successfully!");
         })
     }
+    decline(e, id){ 
+        axios.put(`http://localhost:8080/research/update-status/${id}`, {status: "not approved", id:id})
+        .then(response => { 
+            this.componentDidMount()
+        })
+    }
+
     download = () => {
         let doc = new jsPDF();
         doc.text("paper", 20, 20);
@@ -46,13 +54,26 @@ class ViewResearchPaper extends Component {
                             <h6><b>Description:</b> {item.description}</h6>
                             <h6><b>Author: </b>{item.author}</h6>
                             <h6><b>Paper:</b> {item.paper}</h6>
-                            <h6><b>Status:</b> {item.status}</h6>
+                            <div className="row">
+                                <div  className="col-md-3">Status</div>
+                                            <dd className="col-sm-10">
+                                            {item.status == "not approved" &&
+                                                <span className="badge bg-danger">{item.status}</span>
+                                            }
+                                            {item.status == "approved" &&
+                                                <span className="badge bg-success">{item.status}</span>
+                                            } 
+                                            {item.status == "not decide" &&
+                                                <span className="badge bg-secondary">Not decide</span>
+                                            }   
+                                            </dd>
+                                        </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="center">
                                 <button type="submit" className="btn btn-outline-primary" onClick = {this.download}><i className="fa fa-eye mr-3"></i>&nbsp; View</button>
-                            <button style={{marginLeft: "20px"}} type="submit" className="btn btn-outline-success" onClick={e => this.navigatePaymentPage(e)}><i className="fa fa-check mr-3"></i>&nbsp; Approve</button>
-                            <button style={{marginLeft: "20px"}} onClick = {e => this.deleteResearchPaper(e, item._id)} className="btn btn-outline-danger"><i className="fa fa-times mr-3"></i>&nbsp; Decline</button> 
+                            <button style={{marginLeft: "20px"}} type="submit" className="btn btn-outline-success" onClick={e => this.approve(e,item._id)}><i className="fa fa-check mr-3"></i>&nbsp; Approve</button>
+                            <button style={{marginLeft: "20px"}} onClick={e => this.decline(e,item._id)} className="btn btn-outline-danger"><i className="fa fa-times mr-3"></i>&nbsp; Decline</button> 
                                 </div>
                             </div>
                             

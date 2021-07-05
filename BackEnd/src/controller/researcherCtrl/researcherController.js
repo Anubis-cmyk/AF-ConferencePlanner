@@ -10,6 +10,20 @@ const createResearchPaper = async (req,res) => {
         });
     }
 }
+const updateById = async (req, res) => {
+    const id = req.params.id;
+    const {status} = req.body;
+    const researcher = {
+        status
+    }
+    const update = await Researcher.findByIdAndUpdate(id, researcher)
+        .then(() => {
+            res.status(200).send({status: "research paper status Updated"})
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).send({status: " Error", error:err.message});
+        })
+}
 
 const viewResearchPapers = async (req, res) => {
     await Researcher.find({})
@@ -43,5 +57,6 @@ module.exports = {
     createResearchPaper,
     viewResearchPapers,
     viewResearchPapersById,
+    updateById,
     deleteResearchPapersById
 };

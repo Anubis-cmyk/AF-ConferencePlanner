@@ -30,6 +30,7 @@ const ResearcherSchema = new mongoose.Schema({
     },
     status: {
         type: String, 
+        default:"not decide"
     }
 });
 

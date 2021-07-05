@@ -7,5 +7,6 @@ module.exports = function () {
     router.get('/', controller.viewResearchPapers);
     router.get('/:id', controller.viewResearchPapersById);
     router.delete('/delete/:id', controller.deleteResearchPapersById);
+    router.put('/update-status/:id',controller.updateById);
     return router;
 }

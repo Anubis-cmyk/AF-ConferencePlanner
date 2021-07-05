@@ -12,8 +12,7 @@ class Researcher extends Component {
             author: '',
             email: '',
             number: '',
-            paper: '',
-            status:''
+            paper: ''
         }
 
     }
@@ -30,11 +29,11 @@ class Researcher extends Component {
             email: this.state.email,
             number: this.state.number,
             paper: this.state.paper,
-            status:"not decide"
         }
         console.log(researchppr);
         axios.post('http://localhost:8080/research/create', researchppr).then(response => {
             alert('data successfully insert');
+            console.log(researchppr);
         }).catch(error => {
             console.log(error.message);
         });
