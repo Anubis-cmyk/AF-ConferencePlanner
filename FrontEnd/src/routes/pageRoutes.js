@@ -42,6 +42,7 @@ import DownloadPage from "../workShop/downloadTemplate/downloadPage";
 import SignIn from "../register/SignIn";
 import ReviewResearchPaper from '../reviewer/viewResearchPaper';
 import ReviewWorkShop from '../reviewer/viewWorkShops';
+import UserDetails from '../admin/user/viewUser';
 
 function PageRoutes() {
     return (
@@ -86,6 +87,7 @@ function PageRoutes() {
                         <Route path="/admin-editor" component={AdminConference}/>
                         <Route path="/create-topic" component={CreateTopic}/>
                         <Route path="/manage-topics" component={GetAllTopics}/>
+                        <Route path="/user-details" component={UserDetails}/>
                         <Route path="/post/update/:slug"  component={UpdateTopic}/>
                         <Route path="/post/:slug" exact component={SingleTopic}/>
                     </Switch>

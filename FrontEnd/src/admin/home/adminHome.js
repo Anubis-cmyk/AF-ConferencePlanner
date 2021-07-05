@@ -66,7 +66,7 @@ class AdminHome extends Component {
                         </a>
                     </div>
                     <div className="col">
-                        <a href="#">
+                        <a href="/user-details">
                             <div className="card shadow p-3 mb-5 bg-body rounded">
                                 <h6>User</h6>
                                 <div className="d-grid gap-2 d-md-flex justify-content-md-end">

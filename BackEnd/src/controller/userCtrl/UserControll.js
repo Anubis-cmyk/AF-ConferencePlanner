@@ -70,10 +70,42 @@ const signup =async (req,res)=>{
 }
 
 /**
+ * Delete user
+ * @param req
+ * @param res
+ * @returns {Promise<any>}
+ */
+ const deleteUser = async (req, res) => {
+    const id = req.params.id
+    await User.findByIdAndRemove(id).exec()
+    res.send('itemDeleted');
+}
+
+
+/**
+ * Get all users controller
+ * @param req
+ * @param res
+ * @returns {Promise<any>}
+ */
+ const getAllUsers = async (req, res) => {
+    await User.find({})
+        .populate('User', '_id name email contactNo type')
+        .then(data=>{
+            res.status(200).send({data: data});
+        })
+        .catch(error =>{
+            res.status(500).send({error: error.message});
+        });
+}
+
+/**
  * export controllers
- * @type {{signin: signin, signup: signup}}
+ * @type {{signin: signin, signup: signup, deleteUser: deleteUser , getAllUsers: getAllUsers}}
  */
 module.exports = {
     signup,
     signin,
+    deleteUser,
+    getAllUsers
 };
