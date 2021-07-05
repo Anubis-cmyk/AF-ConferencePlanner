@@ -35,6 +35,11 @@
     color:  #ee7738;
 }
 
+h3 span{
+    color:  #ee7738;
+    font: normal 36px 'Cookie', cursive;
+}
+
 /* Footer links */
 
 .footer-distributed .footer-links{

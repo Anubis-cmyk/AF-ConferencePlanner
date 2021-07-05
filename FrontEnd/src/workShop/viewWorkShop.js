@@ -54,7 +54,7 @@ class ViewWorkShop extends Component {
 
                                     {item.status == "not approved" &&
                                         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                                            <button className="btn btn-outline-danger" onClick={e => this.deleteWorkShop(e,item._id)}><i className="fas fa-trash"></i></button>
+                                            <button className="btn btn-outline-danger" onClick={e => this.deleteWorkShop(e,item._id)}><i className="fas fa-trash">&nbsp;&nbsp;DELETE</i></button>
                                         </div>
                                     }
                                     <div className="row">

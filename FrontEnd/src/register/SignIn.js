@@ -79,6 +79,7 @@ class SignIn extends Component {
                                     <option value="Reviewer">Reviewer</option>
                                     <option value="Researcher">Researcher</option>
                                     <option value="Editor">Editor</option>
+                                    <option value="Admin">Admin</option>
                                 </select>
                             </div>
                             <div className="col-md-6">

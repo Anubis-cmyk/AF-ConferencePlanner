@@ -114,7 +114,7 @@ const View = () => {
 
     return (
         <main>
-        <div className="body" style={{border: '2px solid #666'}}>
+        <div className="body shadow p-3 mb-5 bg-body">
             {confarence.map((c,i)=> (
                 <div className="body" key={i} >
                     <div className="head">
