@@ -1,0 +1,24 @@
+{
+  "name": "af-conferenceplanner",
+  "version": "1.0.0",
+  "description": "AF-ConferencePlannerFinal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd BackEnd && npm run dev\" \"cd FrontEnd && npm start\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix FrontEnd && npm run build --prefix FrontEnd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anubis-cmyk/AF-ConferencePlanner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anubis-cmyk/AF-ConferencePlanner/issues"
+  },
+  "homepage": "https://github.com/Anubis-cmyk/AF-ConferencePlanner#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.9"
+  }
+}
