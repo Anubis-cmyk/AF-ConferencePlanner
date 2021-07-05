@@ -49,7 +49,7 @@ class CreateWorkShop extends Component {
         console.log('data to send', workshop);
         axios.post('http://localhost:8080/workshop/create', workshop)
             .then(response => {
-                alert('Data successfully inserted')
+                alert('Workshop successfully registered')
                 this.props.history.push('/workshop/my');
             })
             .catch(error => {
@@ -62,7 +62,7 @@ class CreateWorkShop extends Component {
         return (
             <div className="container mt-4 shadow p-3 mb-5 bg-body rounded">
                 <div className="p-3">
-                    <h1>WorkShop Registration</h1>
+                    <h1 data-testid='title-field'>WorkShop Registration</h1>
                     <div className="p-3">
                         <form onSubmit={this.onSubmit} className="row g-3" data-testid='form-tag'>
                             <div className="col-12">
@@ -72,6 +72,7 @@ class CreateWorkShop extends Component {
                                     className="form-control"
                                     id="organizerName"
                                     name="organizerName"
+                                    data-testid='organizer-name-field'
                                     value={this.state.organizerName}
                                     onChange={this.onChange}
                                 />
@@ -85,6 +86,7 @@ class CreateWorkShop extends Component {
                                         className="form-control"
                                         id="organizerContactNo"
                                         name="organizerContactNo"
+                                        data-testid='organizer-contact-no-field'
                                         value={this.state.organizerContactNo}
                                         onChange={this.onChange}
                                     />
@@ -101,6 +103,7 @@ class CreateWorkShop extends Component {
                                         placeholder="name@example.com"
                                         name="organizerEmail"
                                         aria-describedby="inputGroupPrepend"
+                                        data-testid='organizer-email-field'
                                         value={this.state.organizerEmail}
                                         onChange={this.onChange}
                                     />
@@ -113,6 +116,7 @@ class CreateWorkShop extends Component {
                                     className="form-control"
                                     id="workShopTitle"
                                     name="workShopTitle"
+                                    data-testid='workshop-title-field'
                                     value={this.state.workShopTitle}
                                     onChange={this.onChange}
                                 />
@@ -123,6 +127,7 @@ class CreateWorkShop extends Component {
                                     className="form-control"
                                     id="description"
                                     name="description"
+                                    data-testid='description-field'
                                     value={this.state.description}
                                     onChange={this.onChange}>
                                 </textarea>
@@ -134,6 +139,7 @@ class CreateWorkShop extends Component {
                                     className="form-control"
                                     id="proposalURL"
                                     name="proposalURL"
+                                    data-testid='proposal-url-field'
                                     value={this.state.proposalURL}
                                     onChange={this.onChange}
                                 />
@@ -147,6 +153,7 @@ class CreateWorkShop extends Component {
                                         className="form-control"
                                         id="presenters"
                                         name="presenters"
+                                        data-testid='presenter-field'
                                         value={this.state.presenters}
                                         onChange={this.onChange}
                                     />
@@ -162,6 +169,7 @@ class CreateWorkShop extends Component {
                                         id="estimatedDuration"
                                         name="estimatedDuration"
                                         aria-label="duration"
+                                        data-testid='estimated-duration-field'
                                         value={this.state.estimatedDuration}
                                         onChange={this.onChange}
                                     />
@@ -178,13 +186,14 @@ class CreateWorkShop extends Component {
                                         id="paymentAmount"
                                         name="paymentAmount"
                                         aria-label="Amount"
+                                        data-testid='payment-amount-field'
                                         value={this.state.paymentAmount}
                                         onChange={this.onChange}
                                     />
                                 </div>
                             </div>
                             <div className="d-grid gap-2">
-                                <button type="submit" className="btn btn-primary">Register</button>
+                                <button type="submit" data-testid='submit-button' className="btn btn-primary">Register</button>
                             </div>
                         </form>
                     </div>

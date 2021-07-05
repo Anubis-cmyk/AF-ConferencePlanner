@@ -74,7 +74,7 @@ class AttendeeWorkShopPayment extends Component {
         console.log('data to send', workshoppayment);
         axios.post('http://localhost:8080/workshoppayment/create', workshoppayment )
             .then(response => {
-                alert('Data successfully inserted')
+                alert('Successfully submitted')
                 this.props.history.push('/workshop-payment');
             })
             .catch(error => {
