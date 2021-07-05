@@ -19,24 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e8d75c-f965-4a01-87b0-2f2e05a7b8a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/controller/userCtrl/UserControll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/src/register/SignIn.js" afterDir="false" />
+    <list default="true" id="f2e8d75c-f965-4a01-87b0-2f2e05a7b8a9" name="Default Changelist" comment="fixed navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/.env" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/api/userAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/api/userAPI/userAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/controller/UserControll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/models/userModel/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/home/paralaxContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/home/paralaxContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/register/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/src/routes/pageRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/src/routes/pageRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/App.d36a57b6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/dist/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +37,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1unTAtL5jjhEnoeEJ1giNDXKAgf" />
@@ -65,7 +64,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/BackEnd/src/api" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -79,6 +80,7 @@
       <recent name="D:\SLIIT\AF-ConferencePlannerFinal\BackEnd\src\models" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -91,43 +93,49 @@
       <updated>1625300212394</updated>
       <workItem from="1625300214999" duration="1926000" />
       <workItem from="1625306901156" duration="13028000" />
+      <workItem from="1625449782774" duration="901000" />
+      <workItem from="1625450711204" duration="4940000" />
+      <workItem from="1625483529443" duration="16616000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed navbar">
+      <created>1625490146581</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625490146581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625333620123">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1625333620123" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1625307603961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1625307603961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1625307603961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1625307603961">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625307603961" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed navbar" />
   </component>
 </project>

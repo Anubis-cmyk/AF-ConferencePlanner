@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const path = require('path');
+
 const workShopAPI = require('./src/api/workShopAPI/workShopAPI');
 const workShopPaymentAPI = require('./src/api/attendeeAPI/workShopPaymentAPI');
 const attendeeAPI = require('./src/api/attendeeAPI/attendeeAPI');
@@ -59,6 +61,12 @@ app.use('/conference', conferenceAPI);
 app.use('/speaker', speakerAPI);
 app.use('/topic', topicAPI);
 
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('FrontEnd/build'));
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname, 'FrontEnd', 'build', 'index.html'));
+    })
+}
 
 app.listen(PORT,()=>{
     console.log(`server is up on PORT ${PORT}`);
