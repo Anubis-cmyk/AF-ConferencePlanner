@@ -178,10 +178,10 @@ const Navbar = () =>{
                                                         <Link className="nav-link" style={isActive(history, '/')} to="/">Home</Link>
                                                         </li>
                                                         <li className="nav-item">
-                                                        <Link className="nav-link" style={isActive(history, '/workshop')} to="/workshop">WorkShop</Link>
+                                                        <Link className="nav-link" style={isActive(history, '/reviewe-workshop')} to="/reviewe-workshop">WorkShop</Link>
                                                         </li>
                                                         <li className="nav-item">
-                                                        <Link className="nav-link" style={isActive(history, '/research-paper')} to="/research-paper">Research Papers</Link>
+                                                        <Link className="nav-link" style={isActive(history, '/reviewe-research-paper')} to="/reviewe-research-paper">Research Papers</Link>
                                                     </li>
                                                 )
                                                 </>}  

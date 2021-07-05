@@ -27,6 +27,9 @@ const ResearcherSchema = new mongoose.Schema({
     paper: {
         type: String,
         required: true
+    },
+    status: {
+        type: String, 
     }
 });
 

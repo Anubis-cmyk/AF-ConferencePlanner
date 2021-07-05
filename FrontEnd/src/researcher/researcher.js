@@ -12,7 +12,8 @@ class Researcher extends Component {
             author: '',
             email: '',
             number: '',
-            paper: ''
+            paper: '',
+            status:''
         }
 
     }
@@ -28,7 +29,8 @@ class Researcher extends Component {
             author: this.state.author,
             email: this.state.email,
             number: this.state.number,
-            paper: this.state.paper
+            paper: this.state.paper,
+            status:"not decide"
         }
         console.log(researchppr);
         axios.post('http://localhost:8080/research/create', researchppr).then(response => {

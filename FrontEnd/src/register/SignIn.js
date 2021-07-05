@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import axios from 'axios';
-import Select from 'react-select';
+import axios from 'axios'; 
 import {Link} from "react-router-dom";
+import img from '../home/image/security.svg';
 
 //Initial states of input fields
 const initialState = {
@@ -41,7 +41,7 @@ class SignIn extends Component {
         console.log('data to send', user);
         axios.post('http://localhost:8080/user/signin', user )
             .then(response => {
-                alert('Data successfully inserted')
+                alert('Welcome to ICAF')
                 localStorage.setItem('User',JSON.stringify(user));
                 this.props.history.push('/');
 
@@ -55,8 +55,12 @@ class SignIn extends Component {
     render() {
         return (
             <div className="container mt-4 shadow p-3 mb-5 bg-body rounded">
-                <div className="p-3">
-                    <h1>User Registration</h1>
+                <div className="p-3 row">
+                    <div className="col-md-6">
+                      <img src={img} alt="" className="mt-5" height="250px"/>
+                    </div>
+                    <div className="col-md-6">
+                    <h1>Sign In</h1>
                     <div className="p-3">
                         <form onSubmit={this.onSubmit} className="row g-3">
                             <div className="col-md-12">
@@ -112,6 +116,7 @@ class SignIn extends Component {
                             <Link  to="/registration">Need a account ? Sign Up</Link>
                         </form>
 
+                    </div>
                     </div>
                 </div>
             </div>

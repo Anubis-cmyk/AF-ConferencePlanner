@@ -40,6 +40,8 @@ import SingleTopic from "../editor/getOneTopic";
 import ShowPdf from "../workShop/downloadTemplate/showPdf";
 import DownloadPage from "../workShop/downloadTemplate/downloadPage";
 import SignIn from "../register/SignIn";
+import ReviewResearchPaper from '../reviewer/viewResearchPaper';
+import ReviewWorkShop from '../reviewer/viewWorkShops';
 
 function PageRoutes() {
     return (
@@ -49,6 +51,8 @@ function PageRoutes() {
                 <section className="content">
                     <Switch>
                         <Route path="/reviewer" component={Reviewer}/>
+                        <Route path="/reviewe-research-paper" component={ReviewResearchPaper}/>
+                        <Route path="/reviewe-workshop" component={ReviewWorkShop}/>
                         <Route path="/researcher" component={Researcher}/>
                         <Route path="/research-paper" component={ViewResearchPaper}/>
                         <Route path="/research-paper-payment" component={ResearchPaperPayment}/>

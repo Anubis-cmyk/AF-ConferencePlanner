@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import axios from 'axios';
-import Select from 'react-select';
+import axios from 'axios'; 
 import {Link} from "react-router-dom";
+import img from '../home/image/login-illus-1.svg';
 
 //Initial states of input fields
 const initialState = {
@@ -59,8 +59,9 @@ class Registraion extends Component {
     render() {
         return (
             <div className="container mt-4 shadow p-3 mb-5 bg-body rounded">
-                <div className="p-3">
-                    <h1>User Registration</h1>
+                <div className="p-3 row">
+                    <div className="col-md-6">
+                    <h1>Welcome !</h1>
                     <div className="p-3">
                         <form onSubmit={this.onSubmit} className="row g-3">
                             <div className="col-12">
@@ -143,7 +144,12 @@ class Registraion extends Component {
                         </form>
 
                     </div>
+                    </div>
+                    <div className="col-md-6">
+                         <img src={img} alt="" className="mt-5"/>
+                    </div>
                 </div>
+                   
             </div>
         )
     }
